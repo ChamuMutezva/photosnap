@@ -1,0 +1,32 @@
+/* ----------------------------------- */
+/*          CUSTOM PROPERTIES          */
+/* ------------------------------------*/
+/*        MAIN-ACCENT COLOURS          */
+/*-------------------------------------*/
+$clr-lt-cream: hsl(28 100 79%); //#ffc593
+$clr-pink: hsl(329 36 59%); //#bc7198
+$clr-blue: hsl(229 100 67%); //5a77ff
+
+/* ------------------------------------*/
+/*        PRIMARY COLOURS              */
+/*-------------------------------------*/
+$clr-black: hsl(0 0 0%); // #000000
+$clr-lt-grey: hsl(0 0 87%); // #DFDFDF
+$clr-white: hsl(0 0 100%); // #ffffff
+
+/* ------------------------------------*/
+/*        TYPOGRAPHY                   */
+/*-------------------------------------*/
+ $ff-dm-sans: 'DM Sans', sans-serif;
+
+
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container {
+    padding: 1rem;
+}
