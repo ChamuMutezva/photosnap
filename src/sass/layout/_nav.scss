@@ -1,0 +1,30 @@
+.menu-control {
+    position: relative;
+}
+
+.menu-btns {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.close-menu {
+    position: absolute;
+}
+
+.modal-container {
+    position: absolute;
+    top: 5.5rem;
+    right: 3rem;
+    z-index: 1;
+   // padding: 2rem;
+    width: 60%;
+    left: 50%;
+    margin-left: -30%;
+    background-color: inherit;
+
+}
+
+.nav-list-item {
+	text-align: center;
+}

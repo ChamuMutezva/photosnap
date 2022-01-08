@@ -7,7 +7,9 @@ function Header() {
     return (
         <header className="flex container">
             <div className="logo-container">
-                <img src={LogoImg} alt="photosnap home page" />
+                <a href="/">
+                    <img src={LogoImg} alt="photosnap home page" />
+                </a>
             </div>
             <nav>
                 <div className="menu-control">
@@ -21,6 +23,23 @@ function Header() {
                         aria-pressed="false">
                         <img src={CloseImg} alt="" />
                     </button>
+                </div>
+                <div className="modal-container">
+                    <ul className="nav-list">
+                        <li className="nav-list-item">
+                            <a href="/">Stories</a>
+                        </li>
+                        <li className="nav-list-item">
+                            <a href="/">Features</a>
+                        </li>
+                        <li className="nav-list-item">
+                            <a href="/">Pricing</a>
+                        </li>
+                        <li className="nav-list-item">
+                            <a href="/">Get an invite</a>
+                        </li>
+
+                    </ul>
                 </div>
             </nav>
         </header>
