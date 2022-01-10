@@ -1,5 +1,12 @@
+@use "../base";
+@use "../utils";
+
 .menu-control {
     position: relative;
+
+    @include utils.mQ(38.75rem) {
+        display: none;
+    }
 }
 
 .menu-btns {
@@ -15,16 +22,56 @@
 .modal-container {
     position: absolute;
     top: 5.5rem;
-    right: 3rem;
     z-index: 1;
-   // padding: 2rem;
+    // padding: 2rem;
     width: 60%;
     left: 50%;
     margin-left: -30%;
     background-color: inherit;
 
+    @include utils.mQ(38.75rem) {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+}
+
+.nav {
+    @include utils.mQ(38.75rem) {
+        flex: 1 1;
+    }
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include utils.mQ(38.75rem) {
+        flex-direction: row;
+        flex: 1 1;
+        justify-content: center;
+        gap: 2rem;
+    }
 }
 
 .nav-list-item {
-	text-align: center;
+    text-align: center;
+}
+
+.nav-list-item-btn {
+    font-size: base.$fs-15;
+    font-weight: base.$fw-bold;
+    color: base.$clr-black;
+    text-decoration: none;
+}
+
+.btn-invite {
+	margin: auto;
+	display: block;
 }

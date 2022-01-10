@@ -11,7 +11,7 @@ function Header() {
                     <img src={LogoImg} alt="photosnap home page" />
                 </a>
             </div>
-            <nav>
+            <nav className="nav">
                 <div className="menu-control">
                     <button className="menu-btns show-menu"
                         aria-label="open the navigation"
@@ -27,19 +27,19 @@ function Header() {
                 <div className="modal-container">
                     <ul className="nav-list">
                         <li className="nav-list-item">
-                            <a href="/">Stories</a>
+                            <a className="nav-list-item-btn" href="/">Stories</a>
                         </li>
                         <li className="nav-list-item">
-                            <a href="/">Features</a>
+                            <a className="nav-list-item-btn" href="/">Features</a>
                         </li>
                         <li className="nav-list-item">
-                            <a href="/">Pricing</a>
-                        </li>
-                        <li className="nav-list-item">
-                            <a href="/">Get an invite</a>
+                            <a className="nav-list-item-btn" href="/">Pricing</a>
                         </li>
 
                     </ul>
+                    <button className="btn-invite">
+                        Get an invite
+                    </button>
                 </div>
             </nav>
         </header>

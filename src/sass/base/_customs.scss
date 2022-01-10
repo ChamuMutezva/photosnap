@@ -1,3 +1,4 @@
+@use "sass:math";
 /* ----------------------------------- */
 /*          CUSTOM PROPERTIES          */
 /* ------------------------------------*/
@@ -17,14 +18,24 @@ $clr-white: hsl(0 0 100%); // #ffffff
 /* ------------------------------------*/
 /*        TYPOGRAPHY                   */
 /*-------------------------------------*/
- $ff-dm-sans: 'DM Sans', sans-serif;
+$ff-dm-sans: 'DM Sans', sans-serif;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+/* ------------------------------------*/
+/*        FONT SIZES                   */
+/*-------------------------------------*/
+$fs: 16;
+$fs-15: 0.9375rem;
+$fs-16: 1rem;
 
 
 
 .flex {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container {
