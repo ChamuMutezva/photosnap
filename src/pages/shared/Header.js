@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import MenuImg from '../../assets/shared/mobile/menu.svg'
 import CloseImg from '../../assets/shared/mobile/close.svg'
 import LogoImg from '../../assets/shared/desktop/logo.svg'
@@ -7,14 +8,16 @@ function Header() {
     return (
         <header className="flex container">
             <div className="logo-container">
-                <a href="/">
+                <Link to="/">
                     <img src={LogoImg} alt="photosnap home page" />
-                </a>
+                </Link>
             </div>
             <nav className="nav">
                 <div className="menu-control">
                     <button className="menu-btns show-menu"
                         aria-label="open the navigation"
+                        aria-haspopup="true"
+                        aria-controls="menu"
                         aria-expanded="false">
                         <img src={MenuImg} alt="" />
                     </button>
@@ -25,15 +28,15 @@ function Header() {
                     </button>
                 </div>
                 <div className="modal-container">
-                    <ul className="nav-list">
-                        <li className="nav-list-item">
-                            <a className="nav-list-item-btn" href="/">Stories</a>
+                    <ul className="nav-list" role="menu" id="menu">
+                        <li  className="nav-list-item">
+                            <Link className="nav-list-item-btn" to="/stories">Stories</Link>
                         </li>
                         <li className="nav-list-item">
-                            <a className="nav-list-item-btn" href="/">Features</a>
+                            <Link className="nav-list-item-btn" to="/features">Features</Link>
                         </li>
                         <li className="nav-list-item">
-                            <a className="nav-list-item-btn" href="/">Pricing</a>
+                            <Link className="nav-list-item-btn" to="/pricing">Pricing</Link>
                         </li>
 
                     </ul>
