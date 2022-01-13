@@ -17,7 +17,20 @@
 
 .close-menu {
     position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
 }
+
+.hide-hamburger {
+    display: none;
+}
+
+.show-close-btn {
+    display: block;
+    position: relative;
+}
+
 
 .modal-container {
     position: absolute;

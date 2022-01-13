@@ -1,10 +1,15 @@
-import React from 'react'
+import { useState } from 'react' 
 import { Link } from 'react-router-dom'
 import MenuImg from '../../assets/shared/mobile/menu.svg'
 import CloseImg from '../../assets/shared/mobile/close.svg'
 import LogoImg from '../../assets/shared/desktop/logo.svg'
 
 function Header() {
+    const [menu, setMenu] = useState(false)
+    function handleNavMenu(evt) {
+        setMenu(!menu)
+        console.log(evt)
+    }
     return (
         <header className="flex container">
             <div className="logo-container">
@@ -14,22 +19,26 @@ function Header() {
             </div>
             <nav className="nav">
                 <div className="menu-control">
-                    <button className="menu-btns show-menu"
+                    <button className={`menu-btns show-menu ${menu ? "hide-hamburger" : ""}`}
                         aria-label="open the navigation"
                         aria-haspopup="true"
                         aria-controls="menu"
+                        onClick={handleNavMenu}
                         aria-expanded="false">
                         <img src={MenuImg} alt="" />
                     </button>
-                    <button className="menu-btns close-menu"
+                    <button className={`menu-btns close-menu ${menu ? "show-close-btn"  : ""}`} 
                         aria-label="close the navigation"
+                        onClick={handleNavMenu}
+                        aria-controls="menu"
+                        aria-expanded="false"
                         aria-pressed="false">
                         <img src={CloseImg} alt="" />
                     </button>
                 </div>
                 <div className="modal-container">
                     <ul className="nav-list" role="menu" id="menu">
-                        <li  className="nav-list-item">
+                        <li className="nav-list-item">
                             <Link className="nav-list-item-btn" to="/stories">Stories</Link>
                         </li>
                         <li className="nav-list-item">
