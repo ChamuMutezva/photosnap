@@ -55,6 +55,10 @@
 
 }
 
+.hide-modal {
+    display: none;
+}
+
 .nav {
     @include utils.mQ(38.75rem) {
         flex: 1 1;
@@ -68,8 +72,8 @@
     @include utils.mQ(38.75rem) {
         flex-direction: row;
         flex: 1 1;
-        justify-content: center;
-        gap: 2rem;
+        justify-content: space-evenly;
+       // gap: 2rem;
     }
 }
 
@@ -82,9 +86,21 @@
     font-weight: base.$fw-bold;
     color: base.$clr-black;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: base.$fw-bold;
 }
 
 .btn-invite {
 	margin: auto;
 	display: block;
+    font-size: base.$fs-12;
+    padding-block: base.$spacer-three-quarters;
+    padding-inline: base.$spacer-1-5;
+    background-color: base.$clr-black;
+    color: base.$clr-white;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: base.$fw-bold;
 }

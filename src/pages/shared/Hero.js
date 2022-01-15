@@ -6,7 +6,7 @@ function Hero(props) {
             <picture>
                 <source media="(min-width: 1080px)" srcSet={props.desktop} />
                 <source media="(min-width: 620px)" srcSet={props.tablet} />
-                <img src={props.mobile} alt=""  />
+                <img src={props.mobile} alt="" className="hero-img" />
             </picture>
         </div>
     )

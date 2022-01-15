@@ -17,7 +17,7 @@ function Header() {
                     <img src={LogoImg} alt="photosnap home page" />
                 </Link>
             </div>
-            <nav className="nav">
+            <nav className="nav" aria-label="main menu navigation" role="navigation">
                 <div className="menu-control">
                     <button className={`menu-btns show-menu ${menu ? "hide-hamburger" : ""}`}
                         aria-label="open the navigation"
@@ -31,12 +31,12 @@ function Header() {
                         aria-label="close the navigation"
                         onClick={handleNavMenu}
                         aria-controls="menu"
-                        aria-expanded="false"
+                        aria-expanded="true"
                         aria-pressed="false">
                         <img src={CloseImg} alt="" />
                     </button>
                 </div>
-                <div className="modal-container">
+                <div className={`modal-container ${menu ? "hide-modal" : ""}`}>
                     <ul className="nav-list" role="menu" id="menu">
                         <li className="nav-list-item">
                             <Link className="nav-list-item-btn" to="/stories">Stories</Link>
