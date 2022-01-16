@@ -1,0 +1,8 @@
+@use "../base";
+.hero-content {
+    background-color: base.$clr-black;
+    color: base.$clr-white;
+}
+.hide-link, .hide-span {
+    display: none;
+}
