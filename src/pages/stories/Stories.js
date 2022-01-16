@@ -9,11 +9,14 @@ import storiesHeroDesktop from '../../assets/stories/desktop/moon-of-appalacia.j
 function Stories() {
     return (
         <main>
+            <h1 className="sr-only">Read the full Photosnap stories here</h1>
             <div className="main-primary">
                 <Hero mobile={storiesHeroMobile} tablet={storiesHeroTablet} desktop={storiesHeroDesktop} />
                 <HeroContent
-                spanText="Last month's featured story "
-                 title="Hazy full moon of Appalachia"
+                    spanText="Last month's featured story "
+                    title="Hazy full moon of Appalachia"
+                    author="by John Appleseed "
+                    dateWritten="March 2nd 2020 "
                     linkText="Read the story"
                     content="The dissected plateau area, while not actually made up of geological mountains, 
                     is popularly called 'mountains', especially in eastern Kentucky and West Virginia, 
@@ -24,8 +27,3 @@ function Stories() {
 }
 
 export default Stories
-// 
-
-
-//March 2nd 2020
-//by John Appleseed 

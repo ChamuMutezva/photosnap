@@ -4,8 +4,8 @@ function Hero(props) {
     return (
         <div className="hero">
             <picture>
-                <source media="(min-width: 1080px)" srcSet={props.desktop} />
-                <source media="(min-width: 620px)" srcSet={props.tablet} />
+                <source media="(min-width: 67.5rem)" srcSet={props.desktop} />
+                <source media="(min-width: 43.125rem)" srcSet={props.tablet} />
                 <img src={props.mobile} alt="" className="hero-img" />
             </picture>
         </div>

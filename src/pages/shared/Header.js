@@ -8,7 +8,7 @@ function Header() {
     const [menu, setMenu] = useState(false)
     function handleNavMenu(evt) {
         setMenu(!menu)
-        console.log(evt)
+      //  console.log(evt)
     }
     return (
         <header className="flex container">
@@ -36,7 +36,7 @@ function Header() {
                         <img src={CloseImg} alt="" />
                     </button>
                 </div>
-                <div className={`modal-container ${menu ? "hide-modal" : ""}`}>
+                <div className={`modal-container ${!menu ? "hide-modal" : ""}`}>
                     <ul className="nav-list" role="menu" id="menu">
                         <li className="nav-list-item">
                             <Link className="nav-list-item-btn" to="/stories">Stories</Link>

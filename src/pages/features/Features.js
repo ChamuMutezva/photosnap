@@ -8,6 +8,7 @@ import HeroContent from '../shared/HeroContent'
 function Features() {
     return (
         <main>
+            <h1 className="sr-only">Photosnap application features</h1>
             <div className="main-primary">
                 <Hero mobile={featureHeroMobile} tablet={featureHeroTablet} desktop={featureHeroDesktop} />
                 <HeroContent title="Features"

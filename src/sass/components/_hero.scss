@@ -1,4 +1,18 @@
 @use "../base";
+@use "../utils";
+
+.hero {
+    @include utils.mQ(43.125rem) {
+        flex: 1 1 40%;
+    }
+
+    @include utils.mQ(67.5rem) {
+        flex: 1 1 60%;
+    }
+}
+
 .hero-img {
-	margin: auto;
+    margin: auto;
+    width: 100%;
+    object-fit: cover;
 }
