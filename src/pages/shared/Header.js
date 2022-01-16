@@ -7,8 +7,7 @@ import LogoImg from '../../assets/shared/desktop/logo.svg'
 function Header() {
     const [menu, setMenu] = useState(false)
     function handleNavMenu(evt) {
-        setMenu(!menu)
-      //  console.log(evt)
+        setMenu(!menu)      
     }
     return (
         <header className="flex container">
@@ -39,13 +38,13 @@ function Header() {
                 <div className={`modal-container ${!menu ? "hide-modal" : ""}`}>
                     <ul className="nav-list" role="menu" id="menu">
                         <li className="nav-list-item">
-                            <Link className="nav-list-item-btn" to="/stories">Stories</Link>
+                            <Link className="nav-list-item-btn" to="/stories" onClick={handleNavMenu}>Stories</Link>
                         </li>
                         <li className="nav-list-item">
-                            <Link className="nav-list-item-btn" to="/features">Features</Link>
+                            <Link className="nav-list-item-btn" to="/features" onClick={handleNavMenu}>Features</Link>
                         </li>
                         <li className="nav-list-item">
-                            <Link className="nav-list-item-btn" to="/pricing">Pricing</Link>
+                            <Link className="nav-list-item-btn" to="/pricing" onClick={handleNavMenu}>Pricing</Link>
                         </li>
 
                     </ul>
