@@ -11,14 +11,16 @@ import beautyStoryDesktop from '../../assets/home/desktop/beautiful-stories.jpg'
 import designMobile from '../../assets/home/mobile/designed-for-everyone.jpg'
 import designTablet from '../../assets/home/tablet/designed-for-everyone.jpg'
 import designDesktop from '../../assets/home/desktop/designed-for-everyone.jpg'
+
 import HeroContent from '../shared/HeroContent'
+import Secondary from '../shared/Secondary'
 
 function Home() {
 
     return (
         <main>
             <h1 className="sr-only">An introduction to the photosnap application</h1>
-            <div className="main-primary">
+            <div className="main-primary main-primary-home">
                 <div className="home-primary">
                     <Hero mobile={homeHeroMobile} tablet={homeHeroTablet} desktop={homeHeroDesktop} />
                     <HeroContent
@@ -45,6 +47,9 @@ function Home() {
                     tool is designed for photographers of all levels, brands, businesses you name it."
                     />
                 </div>
+            </div>
+            <div className="main-seondary main-secondary-home">
+                <Secondary />
             </div>
         </main>
     )

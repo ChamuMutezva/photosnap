@@ -1,0 +1,10 @@
+@use "../base";
+@use "../utils";
+
+.secondary {
+    position: relative;
+    background-image: url("../../assets/stories/mobile/mountains.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

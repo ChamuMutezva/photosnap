@@ -1,0 +1,234 @@
+[
+    {
+        "id": 1,
+        "page": "home",
+        "assets": [
+            {
+                "name": "beautiful-stories",
+                "images": [
+                    "../assets/home/mobile/beautiful-stories.jpg",
+                    "../assets/home/tablet/beautiful-stories.jpg",
+                    "../assets/home/desktop/beautiful-stories.jpg"
+                ]
+            },
+            {
+                "name": "create",
+                "images": [
+                    "../assets/home/mobile/create-and-share.jpg",
+                    "../assets/home/tablet/create-and-share.jpg",
+                    "../assets/home/desktop/create-and-share.jpg"
+                ]
+            },
+            {
+                "name": "design",
+                "images": [
+                    "../assets/home/mobile/designed-for-everyone.jpg",
+                    "../assets/home/tablet/designed-for-everyone.jpg",
+                    "../assets/home/desktop/designed-for-everyone.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "page": "features",
+        "assets": [
+            {
+                "name": "hero",
+                "images": [
+                    "../assets/home/mobile/hero.jpg",
+                    "../assets/home/tablet/hero.jpg",
+                    "../assets/home/desktop/hero.jpg"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "page": "pricing",
+        "assets": [
+            {
+                "name": "hero",
+                "images": [
+                    "../assets/home/mobile/hero.jpg",
+                    "../assets/home/tablet/hero.jpg",
+                    "../assets/home/desktop/hero.jpg"
+                ]
+            }
+        ]
+    }
+    , 
+    {
+        "id": 4,
+        "page": "shared",
+        "assets": [
+            {
+                "name": "hero",
+                "images": [
+                    "../assets/home/mobile/beta.jpg",
+                    "../assets/home/tablet/beta.jpg",
+                    "../assets/home/desktop/beta.jpg"
+                ]
+            }
+        ]
+
+    },
+    {
+        "id": 5,
+        "page": "stories",
+        "assets": [
+            {
+                "name": "voyage",
+                "images": [
+                    "../assets/stories/mobile/18-days-voyage.jpg",
+                    "../assets/stories/tablet/18-days-voyage.jpg",
+                    "../assets/stories/desktop/18-days-voyage.jpg"
+                ]
+            },
+            {
+                "name": "architecturals",
+                "images": [
+                    "../assets/stories/mobile/architecturals.jpg",
+                    "../assets/stories/tablet/architecturals.jpg",
+                    "../assets/stories/desktop/architecturals.jpg"
+                ]
+            }
+            ,
+            {
+                "name": "behind-the-waves",
+                "images": [
+                    "../assets/stories/mobile/behind-the-waves.jpg",
+                    "../assets/stories/tablet/behind-the-waves.jpg",
+                    "../assets/stories/desktop/behind-the-waves.jpg"
+                ]
+            }            
+            ,
+            {
+                "name": "calm-waters",
+                "images": [
+                    "../assets/stories/mobile/calm-waters.jpg",
+                    "../assets/stories/tablet/calm-waters.jpg",
+                    "../assets/stories/desktop/calm-waters.jpg"
+                ]
+            }
+            ,
+            {
+                "name": "cityscapes",
+                "images": [
+                    "../assets/stories/mobile/cityscapes.jpg",
+                    "../assets/stories/tablet/cityscapes.jpg",
+                    "../assets/stories/desktop/cityscapes.jpg"
+                ]
+            }
+            ,
+            {
+                "name": "dark-forest",
+                "images": [
+                    "../assets/stories/mobile/dark-forest.jpg",
+                    "../assets/stories/tablet/dark-forest.jpg",
+                    "../assets/stories/desktop/dark-forest.jpg"
+                ]
+            }
+            ,
+            {
+                "name": "king-on-africa",
+                "images": [
+                    "../assets/stories/mobile/king-on-africa.jpg",
+                    "../assets/stories/tablet/king-on-africa.jpg",
+                    "../assets/stories/desktop/king-on-africa.jpg"
+                ]
+            }
+            ,
+            {
+                "name": "land-of-dreams",
+                "images": [
+                    "../assets/stories/mobile/land-of-dreams.jpg",
+                    "../assets/stories/tablet/land-of-dreams.jpg",
+                    "../assets/stories/desktop/land-of-dreams.jpg"
+                ]
+            }
+            ,
+            {
+                "name": "milky-way",
+                "images": [
+                    "../assets/stories/mobile/milky-way.jpg",
+                    "../assets/stories/tablet/milky-way.jpg",
+                    "../assets/stories/desktop/milky-way.jpg"
+                ]
+            }
+            ,
+            {
+                "name": "moon-of-appalacia",
+                "images": [
+                    "../assets/stories/mobile/moon-of-appalacia.jpg",
+                    "../assets/stories/tablet/moon-of-appalacia.jpg",
+                    "../assets/stories/desktop/moon-of-appalacia.jpg"
+                ]
+            }
+            ,
+            {
+                "name": "mountains",
+                "images": [
+                    "../assets/stories/mobile/mountains.jpg",
+                    "../assets/stories/tablet/mountains.jpg",
+                    "../assets/stories/desktop/mountains.jpg"
+                ]
+            }
+            ,
+            {
+                "name": "rage-of-the-sea",
+                "images": [
+                    "../assets/stories/mobile/rage-of-the-sea.jpg",
+                    "../assets/stories/tablet/rage-of-the-sea.jpg",
+                    "../assets/stories/desktop/rage-of-the-sea.jpg"
+                ]
+            }
+            ,
+            {
+                "name": "running-free",
+                "images": [
+                    "../assets/stories/mobile/running-free.jpg",
+                    "../assets/stories/tablet/running-free.jpg",
+                    "../assets/stories/desktop/running-free.jpg"
+                ]
+            }
+            ,
+            {
+                "name": "somwarpet",
+                "images": [
+                    "../assets/stories/mobile/somwarpet.jpg",
+                    "../assets/stories/tablet/somwarpet.jpg",
+                    "../assets/stories/desktop/somwarpet.jpg"
+                ]
+            }
+            ,
+            {
+                "name": "trip-to-nowhere",
+                "images": [
+                    "../assets/stories/mobile/trip-to-nowhere.jpg",
+                    "../assets/stories/tablet/trip-to-nowhere.jpg",
+                    "../assets/stories/desktop/trip-to-nowhere.jpg"
+                ]
+            }
+            ,
+            {
+                "name": "unforeseen-corners",
+                "images": [
+                    "../assets/stories/mobile/unforeseen-corners.jpg",
+                    "../assets/stories/tablet/unforeseen-corners.jpg",
+                    "../assets/stories/desktop/unforeseen-corners.jpg"
+                ]
+            }
+            ,
+            {
+                "name": "world-tour",
+                "images": [
+                    "../assets/stories/mobile/world-tour.jpg",
+                    "../assets/stories/tablet/world-tour.jpg",
+                    "../assets/stories/desktop/world-tour.jpg"
+                ]
+            }
+        ]
+
+    }
+]

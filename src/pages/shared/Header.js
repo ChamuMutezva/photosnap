@@ -12,7 +12,7 @@ function Header() {
     return (
         <header className="flex container">
             <div className="logo-container">
-                <Link to="/">
+                <Link to="/" >
                     <img src={LogoImg} alt="photosnap home page" />
                 </Link>
             </div>
