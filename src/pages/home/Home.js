@@ -1,4 +1,5 @@
-import React from 'react'
+import { useContext } from 'react'
+import { DataContext } from '../context/Context'
 import Hero from '../shared/Hero'
 import homeHeroMobile from '../../assets/home/mobile/create-and-share.jpg'
 import homeHeroTablet from '../../assets/home/tablet/create-and-share.jpg'
@@ -17,6 +18,8 @@ import Secondary from '../shared/Secondary'
 
 function Home() {
 
+    const { data } = useContext(DataContext)
+    console.log(data)
     return (
         <main>
             <h1 className="sr-only">An introduction to the photosnap application</h1>
