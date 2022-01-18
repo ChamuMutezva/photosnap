@@ -5,7 +5,8 @@ export const DataContext = createContext()
 
 export const DataProvider = (props) => {
     const [data, setData] = useState([])
-
+    const [fetchStatus, setFetchStatus] = useState('idle')
+    const [homePage, setHomePage] = useState("")
     //get data from json api
     const getData = async () => {
         await axios.get('/data.json', {
@@ -22,17 +23,25 @@ export const DataProvider = (props) => {
 
             .then(function (myJson) {
                 setData(myJson)
+                setHomePage(myJson[0])
             });
 
     }
 
     useEffect(() => {
         getData()
+      
+        setFetchStatus("success")
     }, [])
    // console.log(data)
+   if (fetchStatus === 'idle' || fetchStatus === 'loading') {
+    return <div className='loading'>
+      <h2 className='loading-title'>Loading...</h2>    
+    </div>
+  }
 
     return (
-        <DataContext.Provider value={{data}}>
+        <DataContext.Provider value={{data, homePage}}>
             {props.children}
         </DataContext.Provider>
     )

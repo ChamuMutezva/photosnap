@@ -4,37 +4,31 @@
         "page": "home",
         "assets": [
             {
-                "name": "beautiful-stories",
-                 "title": "Beautiful stories every time",
-                "link": "View the stories",
-                "content": "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.",
-                "images": [
-                    "../assets/home/mobile/beautiful-stories.jpg",
-                    "../assets/home/tablet/beautiful-stories.jpg",
-                    "../assets/home/desktop/beautiful-stories.jpg"
-                ]
-            },
-            {
                 "name": "create",
                 "title": "Create and share your photo Stories",
                 "link": "Get an invite",
                 "content": "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
-                "images": [
-                    "../assets/home/mobile/create-and-share.jpg",
-                    "../assets/home/tablet/create-and-share.jpg",
-                    "../assets/home/desktop/create-and-share.jpg"
-                ]
+                "imageMobile": "../assets/home/mobile/create-and-share.jpg",
+                "imageTablet": "../assets/home/tablet/create-and-share.jpg",
+                "imageDesktop": "../assets/home/desktop/create-and-share.jpg"
+            },
+            {
+                "name": "beautiful-stories",
+                "title": "Beautiful stories every time",
+                "link": "View the stories",
+                "content": "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.",
+                "imageMobile": "../assets/home/mobile/beautiful-stories.jpg",
+                "imageTablet": "../assets/home/tablet/beautiful-stories.jpg",
+                "imageDesktop": "../assets/home/desktop/beautiful-stories.jpg"
             },
             {
                 "name": "design",
                 "title": "Designed for everyone",
                 "link": "View the stories",
                 "content": "Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it.",
-                "images": [
-                    "../assets/home/mobile/designed-for-everyone.jpg",
-                    "../assets/home/tablet/designed-for-everyone.jpg",
-                    "../assets/home/desktop/designed-for-everyone.jpg"
-                ]
+                "imageMobile": "../assets/home/mobile/designed-for-everyone.jpg",
+                "imageTablet": "../assets/home/tablet/designed-for-everyone.jpg",
+                "imageDesktop": "../assets/home/desktop/designed-for-everyone.jpg"
             }
         ]
     },
@@ -44,11 +38,9 @@
         "assets": [
             {
                 "name": "hero",
-                "images": [
-                    "../assets/home/mobile/hero.jpg",
-                    "../assets/home/tablet/hero.jpg",
-                    "../assets/home/desktop/hero.jpg"
-                ]
+                "imageMobile": "../assets/home/mobile/hero.jpg",
+                "imageTablet": "../assets/home/tablet/hero.jpg",
+                "imageDesktop": "../assets/home/desktop/hero.jpg"
             }
         ]
     },
@@ -58,15 +50,12 @@
         "assets": [
             {
                 "name": "hero",
-                "images": [
-                    "../assets/home/mobile/hero.jpg",
-                    "../assets/home/tablet/hero.jpg",
-                    "../assets/home/desktop/hero.jpg"
-                ]
+                "imageMobile": "../assets/home/mobile/hero.jpg",
+                "imageTablet": "../assets/home/tablet/hero.jpg",
+                "imageDesktop": "../assets/home/desktop/hero.jpg"
             }
         ]
-    }
-    , 
+    },
     {
         "id": 4,
         "page": "shared",
@@ -80,7 +69,6 @@
                 ]
             }
         ]
-
     },
     {
         "id": 5,
@@ -101,8 +89,7 @@
                     "../assets/stories/tablet/architecturals.jpg",
                     "../assets/stories/desktop/architecturals.jpg"
                 ]
-            }
-            ,
+            },
             {
                 "name": "behind-the-waves",
                 "images": [
@@ -110,8 +97,7 @@
                     "../assets/stories/tablet/behind-the-waves.jpg",
                     "../assets/stories/desktop/behind-the-waves.jpg"
                 ]
-            }            
-            ,
+            },
             {
                 "name": "calm-waters",
                 "images": [
@@ -119,8 +105,7 @@
                     "../assets/stories/tablet/calm-waters.jpg",
                     "../assets/stories/desktop/calm-waters.jpg"
                 ]
-            }
-            ,
+            },
             {
                 "name": "cityscapes",
                 "images": [
@@ -128,8 +113,7 @@
                     "../assets/stories/tablet/cityscapes.jpg",
                     "../assets/stories/desktop/cityscapes.jpg"
                 ]
-            }
-            ,
+            },
             {
                 "name": "dark-forest",
                 "images": [
@@ -137,8 +121,7 @@
                     "../assets/stories/tablet/dark-forest.jpg",
                     "../assets/stories/desktop/dark-forest.jpg"
                 ]
-            }
-            ,
+            },
             {
                 "name": "king-on-africa",
                 "images": [
@@ -146,8 +129,7 @@
                     "../assets/stories/tablet/king-on-africa.jpg",
                     "../assets/stories/desktop/king-on-africa.jpg"
                 ]
-            }
-            ,
+            },
             {
                 "name": "land-of-dreams",
                 "images": [
@@ -155,8 +137,7 @@
                     "../assets/stories/tablet/land-of-dreams.jpg",
                     "../assets/stories/desktop/land-of-dreams.jpg"
                 ]
-            }
-            ,
+            },
             {
                 "name": "milky-way",
                 "images": [
@@ -164,8 +145,7 @@
                     "../assets/stories/tablet/milky-way.jpg",
                     "../assets/stories/desktop/milky-way.jpg"
                 ]
-            }
-            ,
+            },
             {
                 "name": "moon-of-appalacia",
                 "images": [
@@ -173,8 +153,7 @@
                     "../assets/stories/tablet/moon-of-appalacia.jpg",
                     "../assets/stories/desktop/moon-of-appalacia.jpg"
                 ]
-            }
-            ,
+            },
             {
                 "name": "mountains",
                 "images": [
@@ -182,8 +161,7 @@
                     "../assets/stories/tablet/mountains.jpg",
                     "../assets/stories/desktop/mountains.jpg"
                 ]
-            }
-            ,
+            },
             {
                 "name": "rage-of-the-sea",
                 "images": [
@@ -191,8 +169,7 @@
                     "../assets/stories/tablet/rage-of-the-sea.jpg",
                     "../assets/stories/desktop/rage-of-the-sea.jpg"
                 ]
-            }
-            ,
+            },
             {
                 "name": "running-free",
                 "images": [
@@ -200,8 +177,7 @@
                     "../assets/stories/tablet/running-free.jpg",
                     "../assets/stories/desktop/running-free.jpg"
                 ]
-            }
-            ,
+            },
             {
                 "name": "somwarpet",
                 "images": [
@@ -209,8 +185,7 @@
                     "../assets/stories/tablet/somwarpet.jpg",
                     "../assets/stories/desktop/somwarpet.jpg"
                 ]
-            }
-            ,
+            },
             {
                 "name": "trip-to-nowhere",
                 "images": [
@@ -218,8 +193,7 @@
                     "../assets/stories/tablet/trip-to-nowhere.jpg",
                     "../assets/stories/desktop/trip-to-nowhere.jpg"
                 ]
-            }
-            ,
+            },
             {
                 "name": "unforeseen-corners",
                 "images": [
@@ -227,8 +201,7 @@
                     "../assets/stories/tablet/unforeseen-corners.jpg",
                     "../assets/stories/desktop/unforeseen-corners.jpg"
                 ]
-            }
-            ,
+            },
             {
                 "name": "world-tour",
                 "images": [
@@ -238,6 +211,5 @@
                 ]
             }
         ]
-
     }
 ]

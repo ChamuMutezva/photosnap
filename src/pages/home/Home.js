@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { DataContext } from '../context/Context'
 import Hero from '../shared/Hero'
+/*
 import homeHeroMobile from '../../assets/home/mobile/create-and-share.jpg'
 import homeHeroTablet from '../../assets/home/tablet/create-and-share.jpg'
 import homeHeroDesktop from '../../assets/home/desktop/create-and-share.jpg'
@@ -12,18 +13,33 @@ import beautyStoryDesktop from '../../assets/home/desktop/beautiful-stories.jpg'
 import designMobile from '../../assets/home/mobile/designed-for-everyone.jpg'
 import designTablet from '../../assets/home/tablet/designed-for-everyone.jpg'
 import designDesktop from '../../assets/home/desktop/designed-for-everyone.jpg'
-
+*/
 import HeroContent from '../shared/HeroContent'
 import Secondary from '../shared/Secondary'
 
 function Home() {
 
-    const { data } = useContext(DataContext)
-    console.log(data)
+    const { homePage } = useContext(DataContext)
+
+    //   const [assets] = useState(data[0].assets)
+    //  console.log(data[0])
+    // const homePage = data[0]
+    // const { assets } = data[0]
+    console.log(homePage)
+    //  console.log(assets)
+
     return (
         <main>
             <h1 className="sr-only">An introduction to the photosnap application</h1>
             <div className="main-primary main-primary-home">
+
+
+                {homePage && homePage.assets.map(elm => <div key={elm.name} className="home-primary">
+                    <Hero mobile={elm.imageMobile} tablet={elm.imageTablet} desktop={elm.imageDesktop} />
+                    <HeroContent title={elm.title} linkText={elm.linkText} content={elm.content} />
+                </div>)}
+
+                {/*
                 <div className="home-primary">
                     <Hero mobile={homeHeroMobile} tablet={homeHeroTablet} desktop={homeHeroDesktop} />
                     <HeroContent
@@ -50,6 +66,8 @@ function Home() {
                     tool is designed for photographers of all levels, brands, businesses you name it."
                     />
                 </div>
+                */}
+
             </div>
             <div className="main-seondary main-secondary-home">
                 <Secondary />
