@@ -1,9 +1,9 @@
 import React from 'react'
-import Arrow from '../../assets/shared/desktop/arrow.svg'
+// import Arrow from '../../assets/shared/desktop/arrow.svg'
 import LinkArrow from './LinkArrow'
 
 function HeroContent(props) {
-    const linkTag = props.linkStatus ? "" : "hide-link"
+  //  const linkTag = props.linkStatus ? "" : "hide-link"
     const spanText = props.spanText ? "" : "hide-span"
     const authorText = props.author ? "" : "hide-author"
 
