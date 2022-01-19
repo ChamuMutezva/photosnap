@@ -62,11 +62,9 @@
         "assets": [
             {
                 "name": "hero",
-                "images": [
-                    "../assets/home/mobile/beta.jpg",
-                    "../assets/home/tablet/beta.jpg",
-                    "../assets/home/desktop/beta.jpg"
-                ]
+                "imageMobile": "../assets/home/mobile/beta.jpg",
+                "imageTablet": "../assets/home/tablet/beta.jpg",
+                "imageDesktop": "../assets/home/desktop/beta.jpg"
             }
         ]
     },
@@ -75,140 +73,191 @@
         "page": "stories",
         "assets": [
             {
-                "name": "voyage",
-                "images": [
-                    "../assets/stories/mobile/18-days-voyage.jpg",
-                    "../assets/stories/tablet/18-days-voyage.jpg",
-                    "../assets/stories/desktop/18-days-voyage.jpg"
-                ]
+                "name": "18 Days Voyage",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/18-days-voyage.jpg",
+                "imageTablet": "../assets/stories/desktop/18-days-voyage.jpg",
+                "imageDesktop": "../assets/stories/desktop/18-days-voyage.jpg",
+                "author": "Alexei Borodin",
+                "shared": true,
+                "dated": "April 11th 2020"
             },
             {
-                "name": "architecturals",
-                "images": [
-                    "../assets/stories/mobile/architecturals.jpg",
-                    "../assets/stories/tablet/architecturals.jpg",
-                    "../assets/stories/desktop/architecturals.jpg"
-                ]
+                "name": "Architecturals",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/architecturals.jpg",
+                "imageTablet": "../assets/stories/desktop/architecturals.jpg",
+                "imageDesktop": "../assets/stories/desktop/architecturals.jpg",
+                "author": "Samantha Brooke",
+                "shared": true,
+                "dated": "April 9th 2020"
             },
             {
-                "name": "behind-the-waves",
-                "images": [
-                    "../assets/stories/mobile/behind-the-waves.jpg",
-                    "../assets/stories/tablet/behind-the-waves.jpg",
-                    "../assets/stories/desktop/behind-the-waves.jpg"
-                ]
+                "name": "Behind the Waves",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/behind-the-waves.jpg",
+                "imageTablet": "../assets/stories/desktop/behind-the-waves.jpg",
+                "imageDesktop": "../assets/stories/desktop/behind-the-waves.jpg",
+                "author": "Lamarr Wilson",
+                "shared": false,
+                "dated": "March 11th 2020"
             },
             {
                 "name": "calm-waters",
-                "images": [
-                    "../assets/stories/mobile/calm-waters.jpg",
-                    "../assets/stories/tablet/calm-waters.jpg",
-                    "../assets/stories/desktop/calm-waters.jpg"
-                ]
+                "link": "Calm Waters",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/calm-waters.jpg",
+                "imageTablet": "../assets/stories/desktop/calm-waters.jpg",
+                "imageDesktop": "../assets/stories/desktop/calm-waters.jpg",
+                "author": "Samantha Brooke",
+                "shared": false,
+                "dated": "March 9th 2020"
             },
             {
-                "name": "cityscapes",
-                "images": [
-                    "../assets/stories/mobile/cityscapes.jpg",
-                    "../assets/stories/tablet/cityscapes.jpg",
-                    "../assets/stories/desktop/cityscapes.jpg"
-                ]
+                "name": "Sunset Cityscapes",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/cityscapes.jpg",
+                "imageTablet": "../assets/stories/desktop/cityscapes.jpg",
+                "imageDesktop": "../assets/stories/desktop/cityscapes.jpg",
+                "author": "Benjamin Cruz",
+                "shared": true,
+                "dated": "April 14th 2020"
             },
             {
-                "name": "dark-forest",
-                "images": [
-                    "../assets/stories/mobile/dark-forest.jpg",
-                    "../assets/stories/tablet/dark-forest.jpg",
-                    "../assets/stories/desktop/dark-forest.jpg"
-                ]
+                "name": "Night at The Dark Forest",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/dark-forest.jpg",
+                "imageTablet": "../assets/stories/desktop/dark-forest.jpg",
+                "imageDesktop": "../assets/stories/desktop/dark-forest.jpg",
+                "author": "Mohammed Abdul",
+                "shared": false,
+                "dated": "March 4th 2020"
             },
             {
-                "name": "king-on-africa",
-                "images": [
-                    "../assets/stories/mobile/king-on-africa.jpg",
-                    "../assets/stories/tablet/king-on-africa.jpg",
-                    "../assets/stories/desktop/king-on-africa.jpg"
-                ]
+                "name": "King on Africa: Part II",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/king-on-africa.jpg",
+                "imageTablet": "../assets/stories/desktop/king-on-africa.jpg",
+                "imageDesktop": "../assets/stories/desktop/king-on-africa.jpg",
+                "author": "Tim Hillenburg",
+                "shared": false,
+                "dated": "March 29th 2020"
             },
             {
-                "name": "land-of-dreams",
-                "images": [
-                    "../assets/stories/mobile/land-of-dreams.jpg",
-                    "../assets/stories/tablet/land-of-dreams.jpg",
-                    "../assets/stories/desktop/land-of-dreams.jpg"
-                ]
+                "name": "Land of Dreams",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/land-of-dreams.jpg",
+                "imageTablet": "../assets/stories/desktop/land-of-dreams.jpg",
+                "imageDesktop": "../assets/stories/desktop/land-of-dreams.jpg",
+                "author": "William Malcolm",
+                "shared": false,
+                "dated": "February 25th 2020"
             },
             {
-                "name": "milky-way",
-                "images": [
-                    "../assets/stories/mobile/milky-way.jpg",
-                    "../assets/stories/tablet/milky-way.jpg",
-                    "../assets/stories/desktop/milky-way.jpg"
-                ]
+                "name": "The Milky Way",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/milky-way.jpg",
+                "imageTablet": "../assets/stories/desktop/milky-way.jpg",
+                "imageDesktop": "../assets/stories/desktop/milky-way.jpg",
+                "author": "Benjamin Cruz",
+                "shared": false,
+                "dated": "March 5th 2020"
             },
             {
-                "name": "moon-of-appalacia",
-                "images": [
-                    "../assets/stories/mobile/moon-of-appalacia.jpg",
-                    "../assets/stories/tablet/moon-of-appalacia.jpg",
-                    "../assets/stories/desktop/moon-of-appalacia.jpg"
-                ]
+                "name": "Hazy full moon of Appalachia",
+                "link": "Read story",
+                "content": "The dissected plateau area, while not actually made up of geological mountains, is popularly called 'mountains,' especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.",
+                "imageMobile": "../assets/stories/mobile/moon-of-appalacia.jpg",
+                "imageTablet": "../assets/stories/desktop/moon-of-appalacia.jpg",
+                "imageDesktop": "../assets/stories/desktop/moon-of-appalacia.jpg",
+                "author": "John Appleseed",
+                "shared": false,
+                "dated": "March 2nd 2020"
             },
             {
-                "name": "mountains",
-                "images": [
-                    "../assets/stories/mobile/mountains.jpg",
-                    "../assets/stories/tablet/mountains.jpg",
-                    "../assets/stories/desktop/mountains.jpg"
-                ]
+                "name": "The Mountains",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/mountains.jpg",
+                "imageTablet":  "../assets/stories/desktop/mountains.jpg",
+                "imageDesktop": "../assets/stories/desktop/mountains.jpg",
+                "author": "John Appleseed",
+                "shared": true,
+                "dated": "April 16th 2020"
             },
             {
-                "name": "rage-of-the-sea",
-                "images": [
-                    "../assets/stories/mobile/rage-of-the-sea.jpg",
-                    "../assets/stories/tablet/rage-of-the-sea.jpg",
-                    "../assets/stories/desktop/rage-of-the-sea.jpg"
-                ]
+                "name": "Rage of The Sea",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/rage-of-the-sea.jpg",
+                "imageTablet": "../assets/stories/desktop/rage-of-the-sea.jpg",
+                "imageDesktop": "../assets/stories/desktop/rage-of-the-sea.jpg",
+                "author": "Mohammed Abdul",
+                "shared": false,
+                "dated": "March 19th 2020"
             },
             {
-                "name": "running-free",
-                "images": [
-                    "../assets/stories/mobile/running-free.jpg",
-                    "../assets/stories/tablet/running-free.jpg",
-                    "../assets/stories/desktop/running-free.jpg"
-                ]
+                "name": "Running Free",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/running-free.jpg",
+                "imageTablet": "../assets/stories/desktop/running-free.jpg",
+                "imageDesktop": "../assets/stories/desktop/running-free.jpg",
+                "author": "Michelle",
+                "shared": false,
+                "dated": " March 16th 2020"
             },
             {
-                "name": "somwarpet",
-                "images": [
-                    "../assets/stories/mobile/somwarpet.jpg",
-                    "../assets/stories/tablet/somwarpet.jpg",
-                    "../assets/stories/desktop/somwarpet.jpg"
-                ]
+                "name": "Somwarpet's Beauty",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/somwarpet.jpg",
+                "imageTablet": "../assets/stories/desktop/somwarpet.jpg",
+                "imageDesktop": "../assets/stories/desktop/somwarpet.jpg",
+                "author": "Michelle",
+                "shared": false,
+                "dated": "March 1st 2020"
             },
             {
-                "name": "trip-to-nowhere",
-                "images": [
-                    "../assets/stories/mobile/trip-to-nowhere.jpg",
-                    "../assets/stories/tablet/trip-to-nowhere.jpg",
-                    "../assets/stories/desktop/trip-to-nowhere.jpg"
-                ]
+                "name": "The Trip to Nowhere",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/trip-to-nowhere.jpg",
+                "imageTablet": "../assets/stories/desktop/trip-to-nowhere.jpg",
+                "imageDesktop": "../assets/stories/desktop/trip-to-nowhere.jpg",
+                "author": "Felicia Rourke",
+                "shared": false,
+                "dated": " March 21st 2020"
             },
             {
-                "name": "unforeseen-corners",
-                "images": [
-                    "../assets/stories/mobile/unforeseen-corners.jpg",
-                    "../assets/stories/tablet/unforeseen-corners.jpg",
-                    "../assets/stories/desktop/unforeseen-corners.jpg"
-                ]
+                "name": "Unforeseen Corners",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/unforeseen-corners.jpg",
+                "imageTablet": "../assets/stories/desktop/unforeseen-corners.jpg",
+                "imageDesktop": "../assets/stories/desktop/unforeseen-corners.jpg",
+                "author": "William Malcolm",
+                "shared": false,
+                "dated": " April 3rd 2020"
             },
             {
-                "name": "world-tour",
-                "images": [
-                    "../assets/stories/mobile/world-tour.jpg",
-                    "../assets/stories/tablet/world-tour.jpg",
-                    "../assets/stories/desktop/world-tour.jpg"
-                ]
+                "name": "World Tour 2019",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/world-tour.jpg",
+                "imageTablet": "../assets/stories/desktop/world-tour.jpg",
+                "imageDesktop": "../assets/stories/desktop/world-tour.jpg",
+                "author": "Timothy Wagner",
+                "shared": false,
+                "dated": " April 7th 2020"
             }
         ]
     }

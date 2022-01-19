@@ -1,8 +1,9 @@
 import React from 'react'
 import Arrow from '../../assets/shared/desktop/arrow.svg'
+import LinkArrow from './LinkArrow'
 
 function HeroContent(props) {
-    const linkTag = props.linkText ? "" : "hide-link"
+    const linkTag = props.linkStatus ? "" : "hide-link"
     const spanText = props.spanText ? "" : "hide-span"
     const authorText = props.author ? "" : "hide-author"
 
@@ -18,10 +19,13 @@ function HeroContent(props) {
                 <span className={`author`}>{props.author}</span>
             </p>
             <p className="hero-content-text">{props.content}</p>
+            {/*
             <a href="/" className={`get-invite uppercase ${linkTag}`}>
-                <span>{props.linkText}</span>
+                <span className="link-text">{props.linkText}</span>
                 <img className="arrow" src={Arrow} alt="" />
             </a>
+            */}
+           <LinkArrow linkText={props.linkText}/> 
         </div>
     )
 }
