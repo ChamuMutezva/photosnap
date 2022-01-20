@@ -45,36 +45,42 @@
         ],
         "svgs": [
             {
+                "id": "svg1",
                 "url": "../assets/features/desktop/boost-exposure.svg",
                 "title": "100% Responsive",
                 "shared": true,
                 "content": "No matter which the device you're on, our site is fully responsive and stories look beautiful on any screen."
             },
             {
+                "id": "svg2",
                 "url": "../assets/features/desktop/custom-domain.svg",
                 "title": "No Photo Upload Limit",
                 "shared": true,
                 "content": " Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go."
             },
             {
+                "id": "svg3",
                 "url": "../assets/features/desktop/drag-drop.svg",
                 "title": "Available to Embed",
                 "shared": true,
                 "content": " Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. "
             },
             {
+                "id": "svg4",
                 "url": "../assets/features/desktop/embed.svg",
                 "title": "Custom Domain",
                 "shared": false,
                 "content": " With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding! "
             },
             {
+                "id": "svg5",
                 "url": "../assets/features/desktop/no-limit.svg",
                 "title": "Boost Your Exposure",
                 "shared": false,
                 "content": " Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list."
             },
             {
+                "id": "svg6",
                 "url": "../assets/features/desktop/responsive.svg",
                 "title": "Drag & Drop Image",
                 "shared": false,

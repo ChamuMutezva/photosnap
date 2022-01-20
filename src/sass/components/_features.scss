@@ -1,0 +1,25 @@
+@use "../base";
+@use "../utils";
+
+.feature-container {
+    padding-block: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: base.$spacer-3;
+
+    @include utils.mQ(43.125rem) {
+        flex-direction: row;
+    }
+}
+
+.feature-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-list-item-title,
+.feature-list-item-content {
+    text-align: center;
+    margin-block: base.$spacer-3;
+}

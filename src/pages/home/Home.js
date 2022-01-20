@@ -4,14 +4,16 @@ import Hero from '../shared/Hero'
 import HeroContent from '../shared/HeroContent'
 import Secondary from '../shared/Secondary'
 import Story from '../shared/Story'
+import FeatureList from '../shared/FeatureList'
 
 function Home() {
 
-    const { homePage, stories } = useContext(DataContext)
+    const { homePage, stories, features } = useContext(DataContext)
     console.log(homePage)
     console.log(stories)
     const selectStories = stories && stories.assets.filter(elm => elm.shared === true)
-    console.log(selectStories)
+    const selectFeatures = features && features.svgs.filter(elm => elm.shared === true)
+    console.log(selectFeatures)
     return (
         <>
             <main>
@@ -31,14 +33,16 @@ function Home() {
                     </div>
                 </div>
                 <div className="main-home-secondary-container">
-
                     {selectStories && selectStories.map(elm => <Story key={elm.name} mobile={elm.imageMobile}
                         tablet={elm.imageTablet} desktop={elm.imageDesktop} title={elm.name} author={elm.author} />)}
 
                 </div>
             </main>
             <aside>
-                
+                <div className="container feature-container">
+                    {selectFeatures && selectFeatures.map(elm => <FeatureList key={elm.id}
+                        title={elm.title} url={elm.url} content={elm.content} /> )}
+                </div>
             </aside>
         </>
     )
