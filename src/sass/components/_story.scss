@@ -7,21 +7,36 @@
 
 .story-details {
     position: absolute;
+    width: 100%;
     z-index: 1;
-    bottom: base.$spacer-2;
-    left: base.$spacer-1;
+    bottom: base.$spacer-1-25;
+    left: 0;
+
+    .get-invite {
+        justify-content: space-between;
+    }
+
+    .story-details-author {
+        border-bottom: 1px solid white;
+    }
 }
 
 .main-home-secondary-container {
     display: grid;
-   // grid-template-columns: repeat(auto-fit minmax(250px, 1fr));
+    /*  grid-template-columns: repeat(auto-fit minmax(250px, 1fr)); */
 
     @include utils.mQ(43.125rem) {
 
-         grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     @include utils.mQ(67.5rem) {
-       grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
+}
+
+.story-details-title,
+.story-details-author {
+    color: base.$clr-white;
 }

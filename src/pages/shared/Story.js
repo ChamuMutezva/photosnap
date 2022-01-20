@@ -10,9 +10,11 @@ function Story(props) {
                 <img src={props.mobile} alt="" className="hero-img" />
             </picture>
             <div className="story-details">
-                <h2 className="story-details-title">{props.title}</h2>
-                <p className="story-details-author">by {props.author}</p>
-                <LinkArrow linkText="Read story"/>
+                <div className="story-details-container container">
+                    <h2 className="story-details-title">{props.title}</h2>
+                    <p className="story-details-author">by {props.author}</p>
+                    <LinkArrow linkText="Read story" />
+                </div>
             </div>
         </div>
     )
