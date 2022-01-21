@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Header from './pages/shared/Header';
+import Footer from './pages/shared/Footer';
 import Features from './pages/features/Features';
 import Pricing from './pages/pricing/Pricing';
 import Stories from './pages/stories/Stories';
@@ -18,7 +19,9 @@ function App() {
           <Route path="features" element={<Features />} />
           <Route path="pricing" element={<Pricing />} />
         </Routes>
+        <Footer />
       </DataProvider>
+
     </div>
   );
 }

@@ -7,7 +7,7 @@
     flex-direction: column;
     gap: base.$spacer-3;
 
-    @include utils.mQ(43.125rem) {
+    @include utils.mQ(53.75rem) {
         flex-direction: row;
     }
 }
@@ -16,6 +16,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.feature-list-item {
+    max-width: 28.56rem;
+    margin: auto;
 }
 
 .feature-list-item-title,

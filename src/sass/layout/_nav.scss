@@ -13,14 +13,23 @@
     background-color: transparent;
     border: none;
     outline: none;
+
+    &:focus,
+    &:hover {
+        cursor: pointer;
+        outline: dashed currentColor;
+        outline-offset: 0.055em;
+    }
 }
 
-.close-menu {
+.close-menu,
+.close-img {
     position: absolute;
     left: 0;
     top: 0;
     display: none;
 }
+
 
 .hide-hamburger {
     display: none;
@@ -58,13 +67,12 @@
 
 .hide-modal {
     transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
     display: none;
 
     @include utils.mQ(43.125rem) {
         display: flex;
         transform: translateX(0%);
-        // align-items: center;
-        // justify-content: space-around;
     }
 
 }
@@ -102,6 +110,22 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: base.$fw-bold;
+
+    &:focus,
+    &:hover {
+        cursor: pointer;
+        outline: dashed currentColor;
+        outline-offset: 0.25em;
+    }
+}
+
+.nav-btn {
+    &:focus,
+    &:hover {
+        cursor: pointer;
+        outline: dashed currentColor;
+        outline-offset: 0.25em;
+    }
 }
 
 .btn-invite {
@@ -118,6 +142,13 @@
     font-weight: base.$fw-bold;
     width: 90%;
     max-width: 19.375rem;
+
+    &:focus,
+    &:hover {
+        cursor: pointer;
+        outline: dashed currentColor;
+        outline-offset: 0.055em;
+    }
 
     @include utils.mQ(43.125rem) {
         max-width: 9.875rem;

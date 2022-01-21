@@ -46,42 +46,42 @@
         "svgs": [
             {
                 "id": "svg1",
-                "url": "../assets/features/desktop/boost-exposure.svg",
+                "url": "../assets/features/desktop/responsive.svg",
                 "title": "100% Responsive",
                 "shared": true,
                 "content": "No matter which the device you're on, our site is fully responsive and stories look beautiful on any screen."
             },
             {
                 "id": "svg2",
-                "url": "../assets/features/desktop/custom-domain.svg",
+                "url": "../assets/features/desktop/no-limit.svg",
                 "title": "No Photo Upload Limit",
                 "shared": true,
                 "content": " Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go."
             },
             {
                 "id": "svg3",
-                "url": "../assets/features/desktop/drag-drop.svg",
+                "url": "../assets/features/desktop/embed.svg",
                 "title": "Available to Embed",
                 "shared": true,
                 "content": " Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. "
             },
             {
                 "id": "svg4",
-                "url": "../assets/features/desktop/embed.svg",
+                "url": "../assets/features/desktop/custom-domain.svg",
                 "title": "Custom Domain",
                 "shared": false,
                 "content": " With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding! "
             },
             {
                 "id": "svg5",
-                "url": "../assets/features/desktop/no-limit.svg",
+                "url": "../assets/features/desktop/boost-exposure.svg",
                 "title": "Boost Your Exposure",
                 "shared": false,
                 "content": " Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list."
             },
             {
                 "id": "svg6",
-                "url": "../assets/features/desktop/responsive.svg",
+                "url": "../assets/features/desktop/drag-drop.svg",
                 "title": "Drag & Drop Image",
                 "shared": false,
                 "content": "  Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories."
@@ -109,6 +109,48 @@
                 "imageMobile": "../assets/home/mobile/beta.jpg",
                 "imageTablet": "../assets/home/tablet/beta.jpg",
                 "imageDesktop": "../assets/home/desktop/beta.jpg"
+            }
+        ],
+        "svgs":[
+            {
+                "id": "social1",
+                "url": "../assets/shared/desktop/facebook.svg",
+                "title": "facebook",
+                "shared": true,
+                "link": "https://www.facebook.com/",
+                "content": "Visit us on our facebook page"
+            },
+            {
+                "id": "social2",
+                "url": "../assets/shared/desktop/instagram.svg",
+                "title": "instagram",
+                "shared": true,
+                "link": "https://www.instagram.com/",
+                "content": "Visit us on Instagram"
+            },
+            {
+                "id": "social3",
+                "url": "../assets/shared/desktop/pinterest.svg",
+                "title": "pinterest",
+                "shared": true,
+                "link": "https://za.pinterest.com/",
+                "content": "We are available on pinterest"
+            },
+            {
+                "id": "social4",
+                "url": "../assets/shared/desktop/twitter.svg",
+                "title": "twitter",
+                "shared": true,
+                "link": "https://twitter.com",
+                "content": "Visit us on our twitter page"
+            },
+            {
+                "id": "social5",
+                "url": "../assets/shared/desktop/youtube.svg",
+                "title": "youtube",
+                "shared": true,
+                "link": "https://www.youtube.com/",
+                "content": "Visit us on our youtube channel"
             }
         ]
     },

@@ -22,6 +22,10 @@
     .get-invite {
         color: base.$clr-black;
     }
+
+    .arrow {
+        filter: brightness(100%) contrast(0%) invert(100%) saturate(100%);
+    }
 }
 
 .hero-content {
@@ -79,12 +83,14 @@
     letter-spacing: 2px;
     text-decoration: none;
     margin-block-start: base.$spacer-1;
-}
 
-.link-text {
-  //  color: base.$clr-black ;
+    &:focus,
+    &:hover {
+        cursor: pointer;
+        outline: dashed currentColor;
+        outline-offset: 0.25em;
+    }
 }
-
 
 .hide-link,
 .hide-span,
