@@ -59,8 +59,8 @@ function Header() {
                         <li className="nav-list-item">
                             <Link className="nav-list-item-btn" to="/pricing" onClick={handleNavMenu}>Pricing</Link>
                         </li>
-
                     </ul>
+                    
                     <button className="btn-invite">
                         Get an invite
                     </button>

@@ -1,0 +1,110 @@
+@use "../base";
+@use "../utils";
+
+.footer {
+    background-color: base.$clr-black;
+    display: grid;
+    place-content: center;
+    gap: base.$spacer-3;
+
+    .get-invite {
+        justify-content: center;
+    }
+
+    @include utils.mQ(43.125rem) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        .get-invite {
+            justify-content: flex-end;
+        }
+    }
+}
+
+.footer-list-btn {
+    color: base.$clr-white;
+}
+
+.invite {
+    max-width: 22rem;
+
+    @include utils.mQ(43.125rem) {
+        grid-area: 1/3/1/5;
+        justify-self: right;
+    }
+}
+
+.copyright {
+    @include utils.mQ(43.125rem) {
+        grid-area: 3/3/3/5;
+        text-align: right;
+    }
+}
+
+.copyright-content {
+    color: base.$clr-white;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include utils.mQ(43.125rem) {
+        justify-content: flex-start;
+    }
+}
+
+.social-link-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include utils.mQ(43.125rem) {
+        justify-content: space-between;
+    }
+}
+
+.social-link {
+    img {
+        filter: brightness(100%) contrast(100%);
+    }
+
+    a {
+        color: base.$clr-white;
+
+        &:focus,
+        &:hover {
+            cursor: pointer;
+            outline: dashed currentColor;
+            outline-offset: 0.25em;
+        }
+    }
+}
+
+.social-platforms {
+    @include utils.mQ(43.125rem) {
+        grid-area: 3/1/3/2;
+        justify-self: left;
+        width: 100%;
+    }
+
+}
+
+.footer-nav {
+    @include utils.mQ(43.125rem) {
+        grid-area: 2/1/2/3;
+
+        .nav-list {
+            justify-content: space-between;
+        }
+    }
+    @include utils.mQ(67.5rem) {
+        grid-area: 1/2/4/3;
+        .nav-list {
+           flex-direction: column;
+        }
+     }
+}
+
+.social-link img {
+    filter: brightness(100%) contrast(0%) invert(0%);
+}

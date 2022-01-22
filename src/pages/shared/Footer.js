@@ -1,29 +1,35 @@
 import React from 'react'
 import { useContext } from 'react'
 import { DataContext } from '../context/Context'
-import { Link } from 'react-router-dom'
-import LogoImg from '../../assets/shared/desktop/logo.svg'
+//import { Link } from 'react-router-dom'
+//import LogoImg from '../../assets/shared/desktop/logo.svg'
 import SocialLinks from './SocialLinks'
+import FooterNavList from './FooterNavList'
+import LinkArrow from './LinkArrow'
+import FooterLogo from './FooterLogo'
 
 function Footer() {
     const { shared } = useContext(DataContext)
 
-    //  const sharedData = shared && shared.svgs.filter(elm => elm.shared === true)
-
     console.log(shared.svgs)
     return (
-        <footer>
+        <footer className="footer container">
             <div className="logo-container">
-                <Link to="/" className="nav-btn" >
-                    <img src={LogoImg} alt="photosnap home page" />
-                </Link>
+                <FooterLogo />
             </div>
             <div className="social-platforms">
-                <ul>
+                <ul className="social-link-list">
                     {shared && shared.svgs.map(elm => <SocialLinks key={elm.id} Link={elm.link}
                         url={elm.url} content={elm.content} />)}
                 </ul>
-              {/*  <SocialLinks /> */}
+            </div>
+            <FooterNavList />
+            
+            <div className="invite">
+            <LinkArrow linkText="Get an invite" />
+            </div>
+            <div className="copyright">
+                <p className="copyright-content">Copyright 2019. All rights reserved</p>
             </div>
         </footer>
     )

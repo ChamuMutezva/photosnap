@@ -111,7 +111,7 @@
                 "imageDesktop": "../assets/home/desktop/beta.jpg"
             }
         ],
-        "svgs":[
+        "svgs": [
             {
                 "id": "social1",
                 "url": "../assets/shared/desktop/facebook.svg",
@@ -122,22 +122,14 @@
             },
             {
                 "id": "social2",
-                "url": "../assets/shared/desktop/instagram.svg",
-                "title": "instagram",
+                "url": "../assets/shared/desktop/youtube.svg",
+                "title": "youtube",
                 "shared": true,
-                "link": "https://www.instagram.com/",
-                "content": "Visit us on Instagram"
+                "link": "https://www.youtube.com/",
+                "content": "Visit us on our youtube channel"
             },
             {
                 "id": "social3",
-                "url": "../assets/shared/desktop/pinterest.svg",
-                "title": "pinterest",
-                "shared": true,
-                "link": "https://za.pinterest.com/",
-                "content": "We are available on pinterest"
-            },
-            {
-                "id": "social4",
                 "url": "../assets/shared/desktop/twitter.svg",
                 "title": "twitter",
                 "shared": true,
@@ -145,12 +137,20 @@
                 "content": "Visit us on our twitter page"
             },
             {
-                "id": "social5",
-                "url": "../assets/shared/desktop/youtube.svg",
-                "title": "youtube",
+                "id": "social4",
+                "url": "../assets/shared/desktop/pinterest.svg",
+                "title": "pinterest",
                 "shared": true,
-                "link": "https://www.youtube.com/",
-                "content": "Visit us on our youtube channel"
+                "link": "https://za.pinterest.com/",
+                "content": "We are available on pinterest"
+            },
+            {
+                "id": "social5",
+                "url": "../assets/shared/desktop/instagram.svg",
+                "title": "instagram",
+                "shared": true,
+                "link": "https://www.instagram.com/",
+                "content": "Visit us on Instagram"
             }
         ]
     },
