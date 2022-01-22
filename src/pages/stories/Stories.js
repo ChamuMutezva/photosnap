@@ -11,6 +11,7 @@ import storiesHeroDesktop from '../../assets/stories/desktop/moon-of-appalacia.j
 
 function Stories() {
     const { stories } = useContext(DataContext)
+    const selectStories = stories && stories.assets.filter(elm => elm.id !== "story11")
     return (
         <>
             <main>
@@ -28,8 +29,12 @@ function Stories() {
                     and while the ridges are not high, the terrain is extremely rugged. "/>
                 </div>
                 <div className="main-home-secondary-container">
+                    {/*
                     {stories && stories.assets.map(elm => <Story key={elm.name} mobile={elm.imageMobile}
                         tablet={elm.imageTablet}  title={elm.name} author={elm.author} />)}
+                    */}
+                    {selectStories && selectStories.map(elm => <Story key={elm.name} mobile={elm.imageMobile}
+                        tablet={elm.imageTablet} desktop={elm.imageDesktop} title={elm.name} author={elm.author} />)}
                 </div>
             </main>
         </>
