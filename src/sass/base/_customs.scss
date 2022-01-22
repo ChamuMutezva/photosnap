@@ -7,6 +7,7 @@
 $clr-lt-cream: hsl(28 100 79%); //#ffc593
 $clr-pink: hsl(329 36 59%); //#bc7198
 $clr-blue: hsl(229 100 67%); //5a77ff
+$clr-linear-gradient: linear-gradient($clr-lt-cream, $clr-pink, $clr-blue);
 
 /* ------------------------------------*/
 /*        PRIMARY COLOURS              */
@@ -43,6 +44,7 @@ $spacer-three-quarters: 0.75rem;
 $spacer-1: 1rem;
 $spacer-1-25: 1.25rem;
 $spacer-1-5: 1.5rem;
+$spacer-1-8: 1.8rem;
 $spacer-2: 2rem;
 $spacer-2-1: 2.1rem;
 $spacer-2-25: 2.25rem;

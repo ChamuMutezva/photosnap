@@ -9,7 +9,7 @@
     position: absolute;
     width: 100%;
     z-index: 1;
-    bottom: base.$spacer-1-25;
+    bottom: base.$spacer-half;
     left: 0;
 
     .get-invite {
@@ -24,20 +24,13 @@
 .main-home-secondary-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /*
-    @include utils.mQ(43.125rem) {
-
-        grid-template-columns: 1fr 1fr;
-    }
-
-    @include utils.mQ(67.5rem) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    */
-
 }
 
 .story-details-title,
 .story-details-author {
     color: base.$clr-white;
+}
+
+.story-details-author {
+    padding-bottom: base.$spacer-1-5;
 }

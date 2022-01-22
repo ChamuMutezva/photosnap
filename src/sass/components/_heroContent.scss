@@ -2,37 +2,65 @@
 @use "../utils";
 
 .home-primary {
+
+    &:first-child {
+        .hero-content {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 6px;
+                width: 128px;
+                background-image: linear-gradient(base.$clr-blue, base.$clr-pink, base.$clr-lt-cream);
+                top: 0;
+                left: 33px;
+            }
+        }
+
+    }
+
+    &:nth-child(2) {
+        flex-direction: row;
+    }
+
+    &:nth-child(3) {
+        .hero-content {
+            padding-block: 5.8rem;
+        }
+    }
+
+    &:not(:first-child) {
+        .hero-content {
+            background-color: base.$clr-white;
+            color: base.$clr-black;
+        }
+
+        .get-invite {
+            color: base.$clr-black;
+        }
+
+        .arrow {
+            filter: brightness(100%) contrast(0%) invert(100%) saturate(100%);
+        }
+    }
+
     @include utils.mQ(43.125rem) {
         display: flex;
         flex-direction: row-reverse;
     }
 }
 
-.home-primary:nth-child(2) {
-    flex-direction: row;
-
-}
-
-.home-primary:not(:first-child) {
-    .hero-content {
-        background-color: base.$clr-white;
-        color: base.$clr-black;
-    }
-
-    .get-invite {
-        color: base.$clr-black;
-    }
-
-    .arrow {
-        filter: brightness(100%) contrast(0%) invert(100%) saturate(100%);
-    }
+.story-details-container {
+    //	max-width: 19.375rem;
+    margin: auto;
 }
 
 .hero-content {
     background-color: base.$clr-black;
     color: base.$clr-white;
     padding-block: base.$spacer-2-25 * 2;
-    padding-inline: base.$spacer-2-1;
+    padding-inline: base.$spacer-1-8;
 
     @include utils.mQ(43.125rem) {
         flex: 1 1 60%;
@@ -44,7 +72,7 @@
 
     @include utils.mQ(67.5rem) {
         flex: 1 1 40%;
-     }
+    }
 }
 
 .hero-content-title {
@@ -55,10 +83,10 @@
     padding-block-end: base.$spacer-1-25;
 
     @include utils.mQ(43.125rem) {
-       font-size: base.$fs-40;
-       font-weight: base.$fw-bold;
-       letter-spacing: 4.17px;
-     }
+        font-size: base.$fs-40;
+        font-weight: base.$fw-bold;
+        letter-spacing: 4.17px;
+    }
 }
 
 .hero-content-text {

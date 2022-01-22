@@ -159,6 +159,28 @@
         "page": "stories",
         "assets": [
             {
+                "name": "The Mountains",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/mountains.jpg",
+                "imageTablet": "../assets/stories/desktop/mountains.jpg",
+                "imageDesktop": "../assets/stories/desktop/mountains.jpg",
+                "author": "John Appleseed",
+                "shared": true,
+                "dated": "April 16th 2020"
+            },
+            {
+                "name": "Sunset Cityscapes",
+                "link": "Read story",
+                "content": "",
+                "imageMobile": "../assets/stories/mobile/cityscapes.jpg",
+                "imageTablet": "../assets/stories/desktop/cityscapes.jpg",
+                "imageDesktop": "../assets/stories/desktop/cityscapes.jpg",
+                "author": "Benjamin Cruz",
+                "shared": true,
+                "dated": "April 14th 2020"
+            },
+            {
                 "name": "18 Days Voyage",
                 "link": "Read story",
                 "content": "",
@@ -201,17 +223,6 @@
                 "author": "Samantha Brooke",
                 "shared": false,
                 "dated": "March 9th 2020"
-            },
-            {
-                "name": "Sunset Cityscapes",
-                "link": "Read story",
-                "content": "",
-                "imageMobile": "../assets/stories/mobile/cityscapes.jpg",
-                "imageTablet": "../assets/stories/desktop/cityscapes.jpg",
-                "imageDesktop": "../assets/stories/desktop/cityscapes.jpg",
-                "author": "Benjamin Cruz",
-                "shared": true,
-                "dated": "April 14th 2020"
             },
             {
                 "name": "Night at The Dark Forest",
@@ -267,17 +278,6 @@
                 "author": "John Appleseed",
                 "shared": false,
                 "dated": "March 2nd 2020"
-            },
-            {
-                "name": "The Mountains",
-                "link": "Read story",
-                "content": "",
-                "imageMobile": "../assets/stories/mobile/mountains.jpg",
-                "imageTablet": "../assets/stories/desktop/mountains.jpg",
-                "imageDesktop": "../assets/stories/desktop/mountains.jpg",
-                "author": "John Appleseed",
-                "shared": true,
-                "dated": "April 16th 2020"
             },
             {
                 "name": "Rage of The Sea",

@@ -48,6 +48,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     @include utils.mQ(43.125rem) {
         justify-content: flex-start;
     }
@@ -76,6 +77,10 @@
             cursor: pointer;
             outline: dashed currentColor;
             outline-offset: 0.25em;
+
+            img {
+                filter: none;
+            }
         }
     }
 }
@@ -97,12 +102,14 @@
             justify-content: space-between;
         }
     }
+
     @include utils.mQ(67.5rem) {
         grid-area: 1/2/4/3;
+
         .nav-list {
-           flex-direction: column;
+            flex-direction: column;
         }
-     }
+    }
 }
 
 .social-link img {

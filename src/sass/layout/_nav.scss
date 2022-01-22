@@ -120,6 +120,7 @@
 }
 
 .nav-btn {
+    z-index: 2;
     &:focus,
     &:hover {
         cursor: pointer;
@@ -142,12 +143,14 @@
     font-weight: base.$fw-bold;
     width: 90%;
     max-width: 19.375rem;
+    text-decoration: none;
+    z-index: 1;
 
     &:focus,
     &:hover {
         cursor: pointer;
-        outline: dashed currentColor;
-        outline-offset: 0.055em;
+        outline: dashed base.$clr-black;
+        outline-offset: 0.25em;
     }
 
     @include utils.mQ(43.125rem) {
