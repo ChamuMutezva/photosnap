@@ -21,7 +21,6 @@ function Home() {
                     <h1 className="sr-only">An introduction to the photosnap application</h1>
                     <div className="main-primary main-primary-home">
 
-
                         {homePage && homePage.assets.map(elm => <div key={elm.name} className="home-primary">
                             <Hero mobile={elm.imageMobile} tablet={elm.imageTablet} desktop={elm.imageDesktop} />
                             <HeroContent title={elm.title} linkText={elm.link} content={elm.content} linkStatus={true} />

@@ -1,0 +1,16 @@
+@use "../base";
+@use "../utils";
+
+.features-primary,
+.pricing-primary {
+    @include utils.mQ(43.125rem) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: base.$spacer-2;
+}

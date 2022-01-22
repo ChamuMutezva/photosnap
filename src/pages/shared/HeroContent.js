@@ -18,13 +18,7 @@ function HeroContent(props) {
                 <span className={`date-written`}>{props.dateWritten}</span>
                 <span className={`author`}>{props.author}</span>
             </p>
-            <p className="hero-content-text">{props.content}</p>
-            {/*
-            <a href="/" className={`get-invite uppercase ${linkTag}`}>
-                <span className="link-text">{props.linkText}</span>
-                <img className="arrow" src={Arrow} alt="" />
-            </a>
-            */}
+            <p className="hero-content-text">{props.content}</p>           
            <LinkArrow linkText={props.linkText}/> 
         </div>
     )

@@ -34,3 +34,20 @@
 .story-details-author {
     padding-bottom: base.$spacer-1-5;
 }
+
+/*******************************************/
+/*         STORIES PAGE                    */
+/*******************************************/
+.main-stories {
+    position: relative;
+
+    @include utils.mQ(43.125rem) {
+        .hero-content {
+            width: 60%;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            background: none;
+        }
+    }
+}

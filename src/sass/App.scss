@@ -2,6 +2,7 @@
 @use './utils';
 @use './components';
 @use './layout';
+@use './pages';
 
 body {
     background-color: base.$clr-white;

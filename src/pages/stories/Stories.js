@@ -16,7 +16,7 @@ function Stories() {
         <>
             <main>
                 <h1 className="sr-only">Read the full Photosnap stories here</h1>
-                <div className="main-primary">
+                <div className="main-primary main-stories">
                     <Hero mobile={storiesHeroMobile} tablet={storiesHeroTablet} desktop={storiesHeroDesktop} />
                     <HeroContent
                         spanText="Last month's featured story "
@@ -28,11 +28,7 @@ function Stories() {
                     is popularly called 'mountains', especially in eastern Kentucky and West Virginia, 
                     and while the ridges are not high, the terrain is extremely rugged. "/>
                 </div>
-                <div className="main-home-secondary-container">
-                    {/*
-                    {stories && stories.assets.map(elm => <Story key={elm.name} mobile={elm.imageMobile}
-                        tablet={elm.imageTablet}  title={elm.name} author={elm.author} />)}
-                    */}
+                <div className="main-home-secondary-container">                    
                     {selectStories && selectStories.map(elm => <Story key={elm.name} mobile={elm.imageMobile}
                         tablet={elm.imageTablet} desktop={elm.imageDesktop} title={elm.name} author={elm.author} />)}
                 </div>
