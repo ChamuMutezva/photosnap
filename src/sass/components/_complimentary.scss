@@ -1,0 +1,22 @@
+@use "../base";
+@use "../utils";
+
+.complimentary {
+    position: relative;
+}
+
+.complimentary-content {
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.complimentary-grid {
+    height: 100%;
+    display: grid;
+    place-content: center;
+  }
+
+.complimentary-title {
+    color: base.$clr-white;
+}

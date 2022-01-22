@@ -16,7 +16,6 @@ This is a solution to the [Photosnap Website challenge on Frontend Mentor](https
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -45,6 +44,36 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+
+- the challenge has four pages which are the Home page, Stories page, Features and Pricing page.
+
+### Reading the design files
+
+- creating the reset file.
+- create the sass variables for font-sizes, typography, spacings etc
+- create utility classes - classes that have a special assignment
+- read the design files for each page for mobile , tablet and desktop and vice-versa to 
+analyse how to design and structure the html. That helps to see which components can be grouped
+together to get the most of the required designs.
+- simplify the reading by looking at components that are likely to be shared.  The common are usually 
+the header and footer.
+
+### creating the header and navigation
+
+- the header comprises of the photosnap logo on the right which can be used as the home navigation
+- on mobile devices on the right hand side there is a toggle button that opens and closes the rest of the 
+navigation list items. I used `display: flex`
+- on tablet and desktop the toggle button for mobile should be hidden and the navigation should always 
+be displayed
+
+### creating the main section
+
+- all the pages has a similar layout of the hero section. It has an image and content section but displayed differently in some layout of the tablet and desktop section. The mobile is generally a top to bottom approach.
+
+
+### Main Section
+
+
 
 ### Built with
 

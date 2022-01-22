@@ -106,9 +106,9 @@
         "assets": [
             {
                 "name": "hero",
-                "imageMobile": "../assets/home/mobile/beta.jpg",
-                "imageTablet": "../assets/home/tablet/beta.jpg",
-                "imageDesktop": "../assets/home/desktop/beta.jpg"
+                "imageMobile": "../assets/shared/mobile/bg-beta.jpg",
+                "imageTablet": "../assets/shared/tablet/bg-beta.jpg",
+                "imageDesktop": "../assets/shared/desktop/bg-beta.jpg"
             }
         ],
         "svgs": [

@@ -9,8 +9,8 @@ import FeatureList from '../shared/FeatureList'
 function Home() {
 
     const { homePage, stories, features } = useContext(DataContext)
-    console.log(homePage)
-    console.log(stories)
+   // console.log(homePage)
+   // console.log(stories)
     const selectStories = stories && stories.assets.filter(elm => elm.shared === true)
     const selectFeatures = features && features.svgs.filter(elm => elm.shared === true)
     console.log(selectFeatures)

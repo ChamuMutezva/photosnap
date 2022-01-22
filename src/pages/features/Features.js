@@ -7,6 +7,7 @@ import featureHeroTablet from '../../assets/features/tablet/hero.jpg'
 import featureHeroDesktop from '../../assets/features/desktop/hero.jpg'
 import HeroContent from '../shared/HeroContent'
 import FeatureList from '../shared/FeatureList'
+import Complimentary from '../shared/Complimentary'
 
 function Features() {
     const { features } = useContext(DataContext)
@@ -29,6 +30,9 @@ function Features() {
                     </div>
                 </div>
             </main>
+            <aside>
+                <Complimentary />
+            </aside>
 
         </>
     )
