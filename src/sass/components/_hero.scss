@@ -3,7 +3,7 @@
 
 .hero {
     @include utils.mQ(43.125rem) {
-        flex: 1 1 40%;
+        flex: 1 1 35%;
     }
 
     @include utils.mQ(67.5rem) {

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function FooterNavList() {
     return (
-        <div className="footer-nav">
+        <nav className="footer-nav" aria-label="footer navigation">
             <ul className="nav-list" role="menu" id="menu">
                 <li>
                     <Link className="nav-list-item-btn footer-list-btn" to="/">Home</Link>
@@ -18,7 +18,7 @@ function FooterNavList() {
                     <Link className="nav-list-item-btn footer-list-btn" to="/pricing" >Pricing</Link>
                 </li>
             </ul>
-        </div>
+        </nav>
     )
 }
 
