@@ -1,5 +1,6 @@
 @use "sass:math";
 @use "../utils";
+
 /* ----------------------------------- */
 /*          CUSTOM PROPERTIES          */
 /* ------------------------------------*/
@@ -20,7 +21,8 @@ $clr-white: hsl(0 0 100%); // #ffffff
 /* ------------------------------------*/
 /*        TYPOGRAPHY                   */
 /*-------------------------------------*/
-$ff-dm-sans: 'DM Sans', sans-serif;
+$ff-dm-sans: 'DM Sans',
+sans-serif;
 $fw-normal: 400;
 $fw-medium: 500;
 $fw-bold: 700;
@@ -28,8 +30,8 @@ $fw-bold: 700;
 /* ------------------------------------*/
 /*        FONT SIZES                   */
 /*-------------------------------------*/
-$fs: 16;  //
-$fs-12: 0.75rem;  // 12px
+$fs: 16; //
+$fs-12: 0.75rem; // 12px
 $fs-15: 0.9375rem; // 15px
 $fs-16: 1rem; //16px
 $fs-32: 2rem;
@@ -49,8 +51,13 @@ $spacer-1-8: 1.8rem;
 $spacer-2: 2rem;
 $spacer-2-1: 2.1rem;
 $spacer-2-25: 2.25rem;
+$spacer-2-5: 2.5rem;
 $spacer-3: 3rem;
 
+/* ------------------------------------*/
+/*        MAX-SIZES                    */
+/*-------------------------------------*/
+$max-size: 69rem;
 
 .flex {
     display: flex;
@@ -61,6 +68,7 @@ $spacer-3: 3rem;
 .container {
     padding-block: $spacer-1-5;
     padding-inline: $spacer-1-5;
+
     @include utils.mQ(43.125rem) {
         padding-block: $spacer-1;
     }

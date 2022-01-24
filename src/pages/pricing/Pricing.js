@@ -4,8 +4,11 @@ import HeroContent from '../shared/HeroContent'
 import pricingHeroMobile from '../../assets/pricing/mobile/hero.jpg'
 import pricingHeroTablet from '../../assets/pricing/tablet/hero.jpg'
 import pricingHeroDesktop from '../../assets/pricing/desktop/hero.jpg'
+import Complimentary from '../shared/Complimentary'
+import PriceSwitcher from './PriceSwitcher'
+import Plans from './Plans'
 function Pricing() {
-   
+
     return (
         <>
             <main>
@@ -16,8 +19,16 @@ function Pricing() {
                         content="Create a your stories, Photosnap is a platform for photographers and visual storytellers.
                         It's the simple way to create and share your photos. "/>
                 </div>
-               
+
+                <div className="pricing-secondary">
+                    <PriceSwitcher />
+                    <Plans />
+                </div>
+
             </main>
+            <aside>
+                <Complimentary />
+            </aside>
         </>
     )
 }

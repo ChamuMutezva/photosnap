@@ -6,17 +6,37 @@
 }
 
 .complimentary-content {
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
 }
 
 .complimentary-grid {
+   
+   max-width: base.$max-size;
+   margin: auto;
     height: 100%;
     display: grid;
     place-content: center;
-  }
+
+    @include utils.mQ(43.125rem) {
+        grid-template-columns: 1fr 1fr;
+
+        .get-invite {
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+    }
+}
 
 .complimentary-title {
     color: base.$clr-white;
+    font-size: base.$fs-32;
+    font-weight: base.$fw-bold;
+    max-width: 20.75rem;
+
+    @include utils.mQ(43.125rem) {
+        font-size: base.$fs-40;
+    }
 }

@@ -1,11 +1,16 @@
 @use "../base";
 @use "../utils";
 
-.footer {
+.footer-wrapper {
     background-color: base.$clr-black;
+}
+
+.footer {
+    max-width: base.$max-size;
     display: grid;
     place-content: center;
     gap: base.$spacer-3;
+    margin: auto;
 
     .get-invite {
         justify-content: center;

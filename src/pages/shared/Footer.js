@@ -12,23 +12,25 @@ function Footer() {
     const { shared } = useContext(DataContext)
    // console.log(shared.svgs)
     return (
-        <footer className="footer container">
-            <div className="logo-container">
-                <FooterLogo />
-            </div>
-            <div className="social-platforms">
-                <ul className="social-link-list">
-                    {shared && shared.svgs.map(elm => <SocialLinks key={elm.id} Link={elm.link}
-                        url={elm.url} content={elm.content} />)}
-                </ul>
-            </div>
-            <FooterNavList />
-            
-            <div className="invite">
-            <LinkArrow linkText="Get an invite" />
-            </div>
-            <div className="copyright">
-                <p className="copyright-content">Copyright 2019. All rights reserved</p>
+        <footer className="footer-wrapper">
+            <div className="footer container">
+                <div className="logo-container">
+                    <FooterLogo />
+                </div>
+                <div className="social-platforms">
+                    <ul className="social-link-list">
+                        {shared && shared.svgs.map(elm => <SocialLinks key={elm.id} Link={elm.link}
+                            url={elm.url} content={elm.content} />)}
+                    </ul>
+                </div>
+                <FooterNavList />
+                
+                <div className="invite">
+                <LinkArrow linkText="Get an invite" />
+                </div>
+                <div className="copyright">
+                    <p className="copyright-content">Copyright 2019. All rights reserved</p>
+                </div>
             </div>
         </footer>
     )

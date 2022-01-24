@@ -16,9 +16,9 @@
                 top: 0;
                 left: 33px;
 
-                @include utils.mQ(43.125rem) {                    
+                @include utils.mQ(43.125rem) {
                     height: 6px;
-                    width: 67%;                    
+                    width: 67%;
                     top: 25%;
                     left: 3px;
                     transform-origin: left;
@@ -77,10 +77,12 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        padding-inline: base.$spacer-2-5;
     }
 
     @include utils.mQ(67.5rem) {
         flex: 1 1 40%;
+       // margin-inline-start: base.$spacer-2-25 * 2;
     }
 }
 
@@ -103,6 +105,7 @@
     line-height: 1.67;
     font-weight: base.$fw-normal;
     opacity: .5;
+    max-width: 24rem;
 }
 
 .arrow {
@@ -140,4 +143,8 @@
 /*******************************************/
 .hero-content-title-span {
     font-size: base.$fs-12;
+}
+
+.hero-content-author {
+    margin-block-end: base.$spacer-2-5;
 }
