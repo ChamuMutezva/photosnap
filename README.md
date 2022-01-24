@@ -47,6 +47,89 @@ together to get the most of the required designs.
 - simplify the reading by looking at components that are likely to be shared.  The common are usually 
 the header and footer.
 
+### creating the data.json file
+
+- the photosnap site has several data that needs some organisation, of particular interest is the images. It was going to be a longer code by importing each and every image in the files that they are needed.
+
+### Importing the data and usage
+
+- used the context api for data management `import { useState, createContext, useEffect } from 'react'`
+- used axios to fetch the data `import axios from 'axios'`
+- create the context `export const DataContext = createContext()`
+
+```jsx
+export const DataProvider = (props) => {
+    const [data, setData] = useState([])
+    const [fetchStatus, setFetchStatus] = useState('idle')
+    const [homePage, setHomePage] = useState("")
+    const [stories, setStories] = useState("")
+    const [features, setFeatures] = useState("")
+    const [pricing, setPricing] = useState("")
+    const [shared, setShared] = useState("")
+
+    //get data from json api
+    const getData = async () => {
+        await axios.get('/data.json', {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        }
+        )
+
+            .then(function (response) {
+                return response.data;
+            })
+
+            .then(function (myJson) {
+                setData(myJson)
+                setHomePage(myJson[0])
+                setFeatures(myJson[1])
+                setPricing(myJson[2])
+                setShared(myJson[3])
+                setStories(myJson[4])
+            });
+
+    }
+
+    useEffect(() => {
+        getData()
+
+        setFetchStatus("success")
+    }, [])
+    // console.log(data)
+    if (fetchStatus === 'idle' || fetchStatus === 'loading') {
+        return <div className='loading'>
+            <h2 className='loading-title'>Loading...</h2>
+        </div>
+    }
+
+    return (
+        <DataContext.Provider value={{ data, homePage , stories, pricing, features, shared}}>
+            {props.children}
+        </DataContext.Provider>
+    )
+}
+```
+- a series of states has been created to help get the data at paticular stages.
+- for DataContext to work it is important to point out that all the components that uses the data should be nested as follows on the main component. The Home , Stories, Features and Pricing page can all get the same data and get the same state if it changes in any of the pages. As with this challenge the data is not changing
+
+```jsx
+<div className="App">
+      <Header />
+      <DataProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="stories" element={<Stories />} />
+          <Route path="features" element={<Features />} />
+          <Route path="pricing" element={<Pricing />} />
+        </Routes>
+        <Footer />
+      </DataProvider>
+    </div>
+```
+
+
 ### creating the header and navigation
 
 - the header comprises of the photosnap logo on the right which can be used as the home navigation
@@ -55,7 +138,7 @@ navigation list items. I used `display: flex`
 - on tablet and desktop the toggle button for mobile should be hidden and the navigation should always 
 be displayed
 
-### creating the main section
+### creating the Main section
 
 #### Hero section
 
@@ -66,8 +149,15 @@ be displayed
 - the layout for the hero page on mobile has the image on top and the content is below
 - for tablet and desktop the image is on the left and the content is on the right. The content takes about 2 fifth (2/5) of the available space while the image space is about 3 fifth (3/5). Displayed using flex.
 
+##### Hero section - Home page 
 
-### Main Section
+- there is 3 hero sections for the home page . The design for the three are the same witha few exception. The hero sections are contained in the div class `home-primary` with the first class of the content having a dark background and the other 2 have a white background.  The first and third `home-primary` class has a flex-direction of row-reverse while the middle one has the default value of row.
+
+##### Hero section - Stories page 
+
+- the layout of the hero section for the tablet and desktop is different from the other pages. The content is sitting on top of the image which in this scenario acts as a background image. To achieve that the `main-stories` container is set to position relative and the `hero-content`is set to position absolute with a z-index to allow it to be on top of the image
+
+#### Main Section
 
 
 
