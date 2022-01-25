@@ -1,3 +1,6 @@
+@use "../base";
+@use "../utils";
+
 /* 
 	get rid of the fieldset styling and keep 
 	this all on a single line 
@@ -135,6 +138,8 @@
 .price-switcher {
 	display: grid;
 	place-content: center;
+    padding-block-start: base.$spacer-2-5;
+    padding-block-end: base.$spacer-1-5;
 }
 
 

@@ -6,7 +6,7 @@ import pricingHeroTablet from '../../assets/pricing/tablet/hero.jpg'
 import pricingHeroDesktop from '../../assets/pricing/desktop/hero.jpg'
 import Complimentary from '../shared/Complimentary'
 import PriceSwitcher from './PriceSwitcher'
-import Plans from './Plans'
+
 function Pricing() {
 
     return (
@@ -21,8 +21,7 @@ function Pricing() {
                 </div>
 
                 <div className="pricing-secondary">
-                    <PriceSwitcher />
-                    <Plans />
+                    <PriceSwitcher />                   
                 </div>
 
             </main>

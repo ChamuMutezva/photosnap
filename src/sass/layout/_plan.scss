@@ -1,0 +1,22 @@
+@use "../base";
+@use "../utils";
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: base.$spacer-2;
+}
+
+.card-item {
+    background-color: base.$clr-card-grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: base.$spacer-1-5;
+}
+
+.card-content {
+	text-align: center;
+}
