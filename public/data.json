@@ -98,7 +98,70 @@
                 "imageTablet": "../assets/home/tablet/hero.jpg",
                 "imageDesktop": "../assets/home/desktop/hero.jpg"
             }
+        ],
+        "features": [
+            {
+                "name": "posting",
+                "title": "Unlimited Story Posting",
+                "basic": true,
+                "pro": true,
+                "business": true
+            },
+            {
+                "name": "upload",
+                "title": "Unlimited Photo Upload",
+                "basic": true,
+                "pro": true,
+                "business": true
+            },
+            {
+                "name": "embedding",
+                "title" : "Embedding Custom Content",
+                "basic": false,
+                "pro": true,
+                "business": true
+            },
+            {
+                "name": "metadata",
+                "title": "Customize Metadata",
+                "basic": false,
+                "pro": true,
+                "business": true
+            },
+            {
+                "name": "metrics",
+                "title": "Advanced Metrics",
+                "basic": false,
+                "pro": false,
+                "business": true
+            },
+            {
+                "name": "downloads",
+                "title": "Photo Downloads",
+                "basic": false,
+                "pro": false,
+                "business": true
+            },
+            {
+                "name": "indexing",
+                "title": "Search Engine Indexing",
+                "basic": false,
+                "pro": false,
+                "business": true
+            },
+
+
+            {
+                "name": "analytics" ,
+                "title":   "Custom Analytics" ,       
+                "basic": false,
+                "pro": false,
+                "business": true               
+                
+               
+            }
         ]
+        
     },
     {
         "id": 4,
@@ -164,7 +227,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/mountains.jpg",
-                "imageTablet": "../assets/stories/desktop/mountains.jpg",               
+                "imageTablet": "../assets/stories/desktop/mountains.jpg",
                 "author": "John Appleseed",
                 "shared": true,
                 "dated": "April 16th 2020"
@@ -175,7 +238,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/cityscapes.jpg",
-                "imageTablet": "../assets/stories/desktop/cityscapes.jpg",               
+                "imageTablet": "../assets/stories/desktop/cityscapes.jpg",
                 "author": "Benjamin Cruz",
                 "shared": true,
                 "dated": "April 14th 2020"
@@ -186,7 +249,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/18-days-voyage.jpg",
-                "imageTablet": "../assets/stories/desktop/18-days-voyage.jpg",               
+                "imageTablet": "../assets/stories/desktop/18-days-voyage.jpg",
                 "author": "Alexei Borodin",
                 "shared": true,
                 "dated": "April 11th 2020"
@@ -197,7 +260,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/architecturals.jpg",
-                "imageTablet": "../assets/stories/desktop/architecturals.jpg",               
+                "imageTablet": "../assets/stories/desktop/architecturals.jpg",
                 "author": "Samantha Brooke",
                 "shared": true,
                 "dated": "April 9th 2020"
@@ -208,7 +271,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/behind-the-waves.jpg",
-                "imageTablet": "../assets/stories/desktop/behind-the-waves.jpg",               
+                "imageTablet": "../assets/stories/desktop/behind-the-waves.jpg",
                 "author": "Lamarr Wilson",
                 "shared": false,
                 "dated": "March 11th 2020"
@@ -219,7 +282,7 @@
                 "link": "Calm Waters",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/calm-waters.jpg",
-                "imageTablet": "../assets/stories/desktop/calm-waters.jpg",               
+                "imageTablet": "../assets/stories/desktop/calm-waters.jpg",
                 "author": "Samantha Brooke",
                 "shared": false,
                 "dated": "March 9th 2020"
@@ -230,7 +293,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/dark-forest.jpg",
-                "imageTablet": "../assets/stories/desktop/dark-forest.jpg",               
+                "imageTablet": "../assets/stories/desktop/dark-forest.jpg",
                 "author": "Mohammed Abdul",
                 "shared": false,
                 "dated": "March 4th 2020"
@@ -241,7 +304,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/king-on-africa.jpg",
-                "imageTablet": "../assets/stories/desktop/king-on-africa.jpg",               
+                "imageTablet": "../assets/stories/desktop/king-on-africa.jpg",
                 "author": "Tim Hillenburg",
                 "shared": false,
                 "dated": "March 29th 2020"
@@ -252,7 +315,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/land-of-dreams.jpg",
-                "imageTablet": "../assets/stories/desktop/land-of-dreams.jpg",               
+                "imageTablet": "../assets/stories/desktop/land-of-dreams.jpg",
                 "author": "William Malcolm",
                 "shared": false,
                 "dated": "February 25th 2020"
@@ -263,7 +326,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/milky-way.jpg",
-                "imageTablet": "../assets/stories/desktop/milky-way.jpg",               
+                "imageTablet": "../assets/stories/desktop/milky-way.jpg",
                 "author": "Benjamin Cruz",
                 "shared": false,
                 "dated": "March 5th 2020"
@@ -274,7 +337,7 @@
                 "link": "Read story",
                 "content": "The dissected plateau area, while not actually made up of geological mountains, is popularly called 'mountains,' especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.",
                 "imageMobile": "../assets/stories/mobile/moon-of-appalacia.jpg",
-                "imageTablet": "../assets/stories/desktop/moon-of-appalacia.jpg",               
+                "imageTablet": "../assets/stories/desktop/moon-of-appalacia.jpg",
                 "author": "John Appleseed",
                 "shared": false,
                 "dated": "March 2nd 2020"
@@ -285,7 +348,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/rage-of-the-sea.jpg",
-                "imageTablet": "../assets/stories/desktop/rage-of-the-sea.jpg",                
+                "imageTablet": "../assets/stories/desktop/rage-of-the-sea.jpg",
                 "author": "Mohammed Abdul",
                 "shared": false,
                 "dated": "March 19th 2020"
@@ -296,7 +359,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/running-free.jpg",
-                "imageTablet": "../assets/stories/desktop/running-free.jpg",                
+                "imageTablet": "../assets/stories/desktop/running-free.jpg",
                 "author": "Michelle",
                 "shared": false,
                 "dated": " March 16th 2020"
@@ -307,7 +370,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/somwarpet.jpg",
-                "imageTablet": "../assets/stories/desktop/somwarpet.jpg",                
+                "imageTablet": "../assets/stories/desktop/somwarpet.jpg",
                 "author": "Michelle",
                 "shared": false,
                 "dated": "March 1st 2020"
@@ -318,7 +381,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/trip-to-nowhere.jpg",
-                "imageTablet": "../assets/stories/desktop/trip-to-nowhere.jpg",                
+                "imageTablet": "../assets/stories/desktop/trip-to-nowhere.jpg",
                 "author": "Felicia Rourke",
                 "shared": false,
                 "dated": " March 21st 2020"
@@ -329,7 +392,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/unforeseen-corners.jpg",
-                "imageTablet": "../assets/stories/desktop/unforeseen-corners.jpg",               
+                "imageTablet": "../assets/stories/desktop/unforeseen-corners.jpg",
                 "author": "William Malcolm",
                 "shared": false,
                 "dated": " April 3rd 2020"
@@ -340,7 +403,7 @@
                 "link": "Read story",
                 "content": "",
                 "imageMobile": "../assets/stories/mobile/world-tour.jpg",
-                "imageTablet": "../assets/stories/desktop/world-tour.jpg",               
+                "imageTablet": "../assets/stories/desktop/world-tour.jpg",
                 "author": "Timothy Wagner",
                 "shared": false,
                 "dated": " April 7th 2020"

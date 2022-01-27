@@ -1,0 +1,66 @@
+@use "../base";
+@use "../utils";
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+
+    @include utils.mQ(43.125rem) {
+        flex: 1;
+    }
+}
+
+.product-container {
+    border-block-end: 1px solid black;
+    // max-width: 90%;
+    margin: auto;
+
+    @include utils.mQ(43.125rem) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.product-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @include utils.mQ(43.125rem) {
+      p {
+          display: none;
+      }
+    }
+
+}
+
+.product-title {
+    margin-block-end: base.$spacer-1-5;
+
+    @include utils.mQ(43.125rem) {
+        flex: 1;
+    }
+}
+
+.features {
+    max-width: 90%;
+    margin: auto;
+}
+
+.features-title {
+    // padding-inline: 1.5rem;
+    flex: 1;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-content {
+    display: none;
+
+    @include utils.mQ(43.125rem) {
+        display: flex;
+        flex: 1;
+    }
+}
