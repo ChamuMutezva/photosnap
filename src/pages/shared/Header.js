@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import MenuImg from '../../assets/shared/mobile/menu.svg'
 import CloseImg from '../../assets/shared/mobile/close.svg'
 import LogoImg from '../../assets/shared/desktop/logo.svg'
+import InvitePlanBtn from './InvitePlanBtn'
 
 function Header() {
     const [menu, setMenu] = useState(false)
@@ -12,7 +13,7 @@ function Header() {
     return (
         <header className="flex container">
             <div className="logo-container">
-                <Link to="/"className="nav-btn" >
+                <Link to="/" className="nav-btn" >
                     <img src={LogoImg} alt="photosnap home page" />
                 </Link>
             </div>
@@ -61,9 +62,8 @@ function Header() {
                         </li>
                     </ul>
 
-                    <a href="/" className="btn-invite">
-                        Get an invite
-                    </a>
+                    <InvitePlanBtn linkText=" Get an invite" />
+
                 </div>
             </nav>
         </header>

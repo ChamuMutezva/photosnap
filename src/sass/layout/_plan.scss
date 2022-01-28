@@ -21,6 +21,11 @@
     justify-content: center;
     align-items: center;
     gap: base.$spacer-1-5;
+    padding-block-end: base.$spacer-3;
+
+    .btn-invite {
+        max-width: 19.375rem;
+    }
 }
 
 .card-item-title {
@@ -30,7 +35,7 @@
 .card-content {
     text-align: center;
     font-size: base.$fs-15;
-    line-height: 1.6;
+    line-height: 1.67;
     color: #979797;
 }
 
@@ -44,6 +49,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+    margin-block-end: base.$spacer-2;
 }
 
 .monthly-yearly-cost {

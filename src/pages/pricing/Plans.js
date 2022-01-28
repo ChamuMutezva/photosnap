@@ -1,4 +1,5 @@
 import React from 'react'
+import InvitePlanBtn from '../shared/InvitePlanBtn'
 import Products from './Products'
 
 function Plans(props) {
@@ -10,7 +11,7 @@ function Plans(props) {
                     <li className="card-item container">
                         <h3 className="card-item-title">Basic</h3>
                         <p className="card-content">
-                            Includes basic usage of our platform.Recommended for new and aspiring photographers.
+                            Includes basic usage of our platform. Recommended for new and aspiring photographers.
                         </p>
                         <p className="card-cost" aria-live="polite">
                             <span className="monthly-yearly-cost" >
@@ -20,14 +21,13 @@ function Plans(props) {
                                 {props.option === "yearly" ? " per year" : " per month"}
                             </span>
                         </p>
-                        <button>
-                            Pick Plan
-                        </button>
+                        <InvitePlanBtn linkText="Pick Plan" />
+
                     </li>
                     <li className="card-item container">
                         <h3 className="card-item-title">Pro</h3>
                         <p className="card-content">
-                            More advanced features available.Recommended for photography veterans and professionals
+                            More advanced features available. Recommended for photography veterans and professionals
                         </p>
                         <p className="card-cost">
                             <span className="monthly-yearly-cost" aria-live="polite">
@@ -37,9 +37,7 @@ function Plans(props) {
                                 {props.option === "yearly" ? " per year" : " per month"}
                             </span>
                         </p>
-                        <button>
-                            Pick Plan
-                        </button>
+                        <InvitePlanBtn linkText="Pick Plan" />
                     </li>
                     <li className="card-item container">
                         <h3 className="card-item-title">Business</h3>
@@ -54,9 +52,7 @@ function Plans(props) {
                                 {props.option === "yearly" ? " per year" : " per month"}
                             </span>
                         </p>
-                        <button>
-                            Pick Plan
-                        </button>
+                        <InvitePlanBtn linkText="Pick Plan" />
                     </li>
 
                 </ul>
