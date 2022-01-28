@@ -6,9 +6,9 @@
 	this all on a single line 
 */
 .radio-price-switch {
-	border: none;
-	padding: 0;
-	white-space: nowrap;
+    border: none;
+    padding: 0;
+    white-space: nowrap;
 }
 
 /*
@@ -18,9 +18,9 @@
 	users, but you know...
 */
 .radio-price-switch legend {
-	font-size: 2px;
-	opacity: 0;
-	position: absolute;
+    font-size: 2px;
+    opacity: 0;
+    position: absolute;
 }
 
 /*
@@ -32,10 +32,12 @@
 	sides of the UI
 */
 .radio-price-switch label {
-	display: inline-block;
-	line-height: 2;
-	position: relative;
-	z-index: 2;
+    font-size: base.$fs-18;
+    font-weight: base.$fw-bold;
+    display: inline-block;
+    line-height: 2;
+    position: relative;
+    z-index: 2;
 }
 
 /*
@@ -45,8 +47,8 @@
 	'visually-hidden' class...so might as well just avoid that issue...
 */
 .radio-price-switch input {
-	opacity: 0;
-	position: absolute;
+    opacity: 0;
+    position: absolute;
 }
 
 /*
@@ -61,12 +63,12 @@
   the current option
 */
 .radio-price-switch label:first-of-type {
-	padding-right: 5em;
+    padding-right: 5em;
 }
 
 .radio-price-switch label:last-child {
-	margin-left: -4.25em;
-	padding-left: 5em;
+    margin-left: -4.25em;
+    padding-left: 5em;
 }
 
 /*
@@ -75,72 +77,69 @@
 	polyfill for you for a bit...
  */
 .radio-price-switch:focus-within label:first-of-type:after {
-	box-shadow: 0 0 0 2px #fff, 0 0 0 4px #2196f3;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #2196f3;
 }
 
 /* polyfill class*/
 .radio-price-switch-within label:first-of-type:after {
-	box-shadow: 0 0 0 2px #fff, 0 0 0 4px #2196f3;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #2196f3;
 }
 
 /* making the switch UI.  */
 .radio-price-switch label:first-of-type:before,
 .radio-price-switch label:first-of-type:after {
-	border: 1px solid #aaa;
-	content: "";
-	height: 2em;
-	overflow: hidden;
-	pointer-events: none;
-	position: absolute;
-	vertical-align: middle;
+    border: 1px solid #aaa;
+    content: "";
+    height: 2em;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    vertical-align: middle;
 }
 
 .radio-price-switch label:first-of-type:before {
-	background: #fff;
-	border: 1px solid #aaa;
-	border-radius: 100%;
-	position: absolute;
-	right: -.075em;
-	transform: translateX(0em);
-	transition: transform .2s ease-in-out;
-	width: 2em;
-	z-index: 2;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 100%;
+    position: absolute;
+    right: -.075em;
+    transform: translateX(0em);
+    transition: transform .2s ease-in-out;
+    width: 2em;
+    z-index: 2;
 }
 
 .radio-price-switch label:first-of-type:after {
-	background: #222;
-	border-radius: 1em;
-	margin: 0 1em;
-	transition: background .2s ease-in-out;
-	width: 4em;
+    background: #222;
+    border-radius: 1em;
+    margin: 0 1em;
+    transition: background .2s ease-in-out;
+    width: 4em;
 }
 
 /*
 	Visually change the switch UI to match the
 	checked state of the first radio button
 */
-.radio-price-switch input:first-of-type:checked ~ label:first-of-type:after {
-	background: #2196f3;
+.radio-price-switch input:first-of-type:checked~label:first-of-type:after {
+    background: #2196f3;
 }
 
-.radio-price-switch input:first-of-type:checked ~ label:first-of-type:before {
-	transform: translateX(-2em);
+.radio-price-switch input:first-of-type:checked~label:first-of-type:before {
+    transform: translateX(-2em);
 }
 
 /* Move the 2nd label to have a lower z-index, so when that
    option is toggled, the first label will overlay on top of the
    Switch ui, and the switch can be pressed again to toggle back
    to the prevoius state. */
-.radio-price-switch input:last-of-type:checked ~ label:last-of-type {
-	z-index: 1;
+.radio-price-switch input:last-of-type:checked~label:last-of-type {
+    z-index: 1;
 }
 
 .price-switcher {
-	display: grid;
-	place-content: center;
-    padding-block-start: base.$spacer-2-5;
-    padding-block-end: base.$spacer-1-5;
+    display: grid;
+    place-content: center;
+    padding-block-start: base.$spacer-3-75;
+    padding-block-end: base.$spacer-1;
 }
-
-
-

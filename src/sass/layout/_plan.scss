@@ -12,7 +12,7 @@
 }
 
 .card-item {
-    background-color: base.$clr-card-grey;
+    background-color: base.$clr-lt-grey;
     border-radius: 10px;
     max-width: 43.1rem;
     margin: auto;
@@ -23,11 +23,34 @@
     gap: base.$spacer-1-5;
 }
 
+.card-item-title {
+    font-size: base.$fs-24;
+}
+
 .card-content {
     text-align: center;
+    font-size: base.$fs-15;
+    line-height: 1.6;
+    color: #979797;
 }
 
 .product-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-cost {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.monthly-yearly-cost {
+    font-weight: base.$fw-bold;
+    font-size: base.$fs-40;
+}
+
+.duration-term {
+	color: #979797;
 }
