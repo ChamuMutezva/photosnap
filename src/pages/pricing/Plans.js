@@ -9,10 +9,14 @@ function Plans(props) {
             <div className="cards container">
                 <ul className="card-list">
                     <li className="card-item container">
-                        <h3 className="card-item-title">Basic</h3>
-                        <p className="card-content">
-                            Includes basic usage of our platform. Recommended for new and aspiring photographers.
-                        </p>
+
+                        <div className="card-item-primary">
+                            <h3 className="card-item-title">Basic</h3>
+                            <p className="card-content">
+                                Includes basic usage of our platform. Recommended for new and aspiring photographers.
+                            </p>
+                        </div>
+
                         <p className="card-cost" aria-live="polite">
                             <span className="monthly-yearly-cost" >
                                 {props.option === "yearly" ? "$190.00 " : "$19.00 "}
@@ -21,14 +25,17 @@ function Plans(props) {
                                 {props.option === "yearly" ? " per year" : " per month"}
                             </span>
                         </p>
+
                         <InvitePlanBtn linkText="Pick Plan" />
 
                     </li>
                     <li className="card-item container">
-                        <h3 className="card-item-title">Pro</h3>
-                        <p className="card-content">
-                            More advanced features available. Recommended for photography veterans and professionals
-                        </p>
+                        <div className="card-item-primary">
+                            <h3 className="card-item-title">Pro</h3>
+                            <p className="card-content">
+                                More advanced features available. Recommended for photography veterans and professionals
+                            </p>
+                        </div>
                         <p className="card-cost">
                             <span className="monthly-yearly-cost" aria-live="polite">
                                 {props.option === "yearly" ? "$390.00 " : "$39.00 "}
@@ -40,10 +47,14 @@ function Plans(props) {
                         <InvitePlanBtn linkText="Pick Plan" />
                     </li>
                     <li className="card-item container">
-                        <h3 className="card-item-title">Business</h3>
-                        <p className="card-content">
-                            Additional features available such as more detailed metrics.Recommended for business owners.
-                        </p>
+
+                        <div className="card-item-primary">
+                            <h3 className="card-item-title">Business</h3>
+                            <p className="card-content">
+                                Additional features available such as more detailed metrics. Recommended for business owners.
+                            </p>
+                        </div>
+
                         <p className="card-cost">
                             <span className="monthly-yearly-cost" aria-live="polite">
                                 {props.option === "yearly" ? "$990.00 " : "$99.00 "}
@@ -52,6 +63,7 @@ function Plans(props) {
                                 {props.option === "yearly" ? " per year" : " per month"}
                             </span>
                         </p>
+                        
                         <InvitePlanBtn linkText="Pick Plan" />
                     </li>
 

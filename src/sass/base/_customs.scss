@@ -16,6 +16,7 @@ $clr-linear-gradient: linear-gradient($clr-lt-cream, $clr-pink, $clr-blue);
 /*-------------------------------------*/
 $clr-black: hsl(0 0 0%); // #000000
 $clr-lt-grey: hsl(0 0 87%); // #DFDFDF
+$clr-greyish: #f7f7f7;
 $clr-white: hsl(0 0 100%); // #ffffff
 $clr-card-grey: #979797;
 
@@ -32,6 +33,7 @@ $fw-bold: 700;
 /*        FONT SIZES                   */
 /*-------------------------------------*/
 $fs: 16; //
+$fs-10: 0.625rem;
 $fs-12: 0.75rem; // 12px
 $fs-15: 0.9375rem; // 15px
 $fs-16: 1rem; //16px

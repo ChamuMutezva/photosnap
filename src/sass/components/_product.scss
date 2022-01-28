@@ -26,6 +26,13 @@
     flex-direction: column;
     gap: 1rem;
 
+    p {
+        color: base.$clr-black;
+        font-size: base.$fs-10;
+        opacity: 0.6;
+        text-transform: uppercase;
+        letter-spacing: 1.67px;
+    }
     @include utils.mQ(43.125rem) {
         p {
             display: none;
@@ -35,11 +42,21 @@
 }
 
 .product-title {
+    font-size: base.$fs-12;
     margin-block-end: base.$spacer-1-5;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 
     @include utils.mQ(43.125rem) {
         flex: 1;
     }
+}
+
+.feature-content-title {
+    text-transform: uppercase;
+    font-weight: base.$fw-bold;
+    font-size: base.$fs-12;   
+    letter-spacing: 2px;
 }
 
 .features {
@@ -49,15 +66,16 @@
 }
 
 .features-title {
-    // padding-inline: 1.5rem;
+    font-size: base.$fs-12;
     flex: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .title-container {
     display: flex;
     justify-content: space-between;
-    border-block-start: 1px solid base.$clr-black;
-
+    border-block-end: 1px solid base.$clr-black;
 }
 
 .feature-content {

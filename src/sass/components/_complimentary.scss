@@ -3,6 +3,28 @@
 
 .complimentary {
     position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 34%;
+        background-image: linear-gradient(base.$clr-blue, base.$clr-pink, base.$clr-lt-cream);
+        top: 0;
+        left: 33px;
+    }
+
+
+    @include utils.mQ(43.125rem) {
+        &::before {
+            height: 100%;
+            width: 6px;
+            top: 0%;
+            left: 0;
+           // transform-origin: left;
+           // transform: rotate(90deg);
+        }
+    }
 }
 
 .complimentary-content {
@@ -13,12 +35,14 @@
 }
 
 .complimentary-grid {
-   
-   max-width: base.$max-size;
-   margin: auto;
+    position: relative;
+    max-width: base.$max-size;
+    margin: auto;
     height: 100%;
     display: grid;
     place-content: center;
+
+
 
     @include utils.mQ(43.125rem) {
         grid-template-columns: 1fr 1fr;
@@ -27,6 +51,7 @@
             justify-content: flex-end;
             align-items: flex-start;
         }
+
     }
 }
 

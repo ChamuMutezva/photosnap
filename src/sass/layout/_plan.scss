@@ -4,7 +4,7 @@
 .card-list {
     display: flex;
     flex-direction: column;
-    gap: base.$spacer-2;
+    gap: base.$spacer-1-5;
 
     @include utils.mQ(67.5rem) {
         flex-direction: row;
@@ -12,8 +12,7 @@
 }
 
 .card-item {
-    background-color: base.$clr-lt-grey;
-    border-radius: 10px;
+    background-color: base.$clr-greyish;
     max-width: 43.1rem;
     margin: auto;
     display: flex;
@@ -26,10 +25,25 @@
     .btn-invite {
         max-width: 19.375rem;
     }
+
+    @include utils.mQ(43.125rem) {
+        display: grid;
+        place-content: center;
+        grid-template-columns: 1fr 1fr;
+
+        .btn-invite {
+           margin-inline-start: 0;
+        }
+    }
 }
 
 .card-item-title {
     font-size: base.$fs-24;
+    text-align: center;
+
+    @include utils.mQ(43.125rem) {
+        text-align: left;
+    }
 }
 
 .card-content {
@@ -37,6 +51,10 @@
     font-size: base.$fs-15;
     line-height: 1.67;
     color: #979797;
+
+    @include utils.mQ(43.125rem) {
+        text-align: left;
+    }
 }
 
 .product-list {
@@ -45,11 +63,15 @@
 }
 
 .card-cost {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-block-end: base.$spacer-2;
+
+    @include utils.mQ(43.125rem) {
+       align-items: flex-end;
+    }
 }
 
 .monthly-yearly-cost {
@@ -58,5 +80,5 @@
 }
 
 .duration-term {
-	color: #979797;
+    color: #979797;
 }
