@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import gsap from 'gsap'
 import MenuImg from '../../assets/shared/mobile/menu.svg'
 import CloseImg from '../../assets/shared/mobile/close.svg'
 import LogoImg from '../../assets/shared/desktop/logo.svg'
@@ -7,11 +8,22 @@ import InvitePlanBtn from './InvitePlanBtn'
 
 function Header() {
     const [menu, setMenu] = useState(false)
+    const headerRef = useRef(null)
     function handleNavMenu(evt) {
         setMenu(!menu)
     }
+
+    useEffect(() => {
+        gsap.from(headerRef.current, {
+            duration: 1,
+            autoAlpha: 0,
+            ease: "none",
+            delay: 1
+        })
+    }, [headerRef])
+
     return (
-        <header className="flex container">
+        <header ref={headerRef} className="flex container">
             <div className="logo-container">
                 <Link to="/" className="nav-btn" aria-current="page" >
                     <img src={LogoImg} alt="photosnap home page" />

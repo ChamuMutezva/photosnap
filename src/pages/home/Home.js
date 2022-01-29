@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react'
+import { useContext, useEffect} from 'react'
 import { DataContext } from '../context/Context'
 import Hero from '../shared/Hero'
 import HeroContent from '../shared/HeroContent'
@@ -7,17 +7,14 @@ import Story from '../shared/Story'
 import FeatureList from '../shared/FeatureList'
 
 function Home() {
-
-    const { homePage, stories, features } = useContext(DataContext)
-    console.log(homePage)
-   // console.log(stories)
+   
+    const { homePage, stories, features } = useContext(DataContext)   
     const selectStories = stories && stories.assets.filter(elm => elm.shared === true)
-    const selectFeatures = features && features.svgs.filter(elm => elm.shared === true)
-    console.log(selectFeatures)
+    const selectFeatures = features && features.svgs.filter(elm => elm.shared === true)    
 
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+    }, [])   
 
     return (
         <>
@@ -45,7 +42,7 @@ function Home() {
             <aside>
                 <div className="container feature-container">
                     {selectFeatures && selectFeatures.map(elm => <FeatureList key={elm.id}
-                        title={elm.title} url={elm.url} content={elm.content} /> )}
+                        title={elm.title} url={elm.url} content={elm.content} />)}
                 </div>
             </aside>
         </>

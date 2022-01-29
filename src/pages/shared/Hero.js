@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Hero(props) {
+function Hero(props) {   
+
     return (
         <div className="hero">
             <picture>
