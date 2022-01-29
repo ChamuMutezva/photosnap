@@ -1,4 +1,5 @@
-import React from 'react'
+import  React from 'react'
+import { useEffect } from 'react'
 import Hero from '../shared/Hero'
 import HeroContent from '../shared/HeroContent'
 import pricingHeroMobile from '../../assets/pricing/mobile/hero.jpg'
@@ -9,9 +10,13 @@ import PriceSwitcher from './PriceSwitcher'
 
 function Pricing() {
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <>
-            <main>
+            <main tabIndex="-1">
                 <h1 className="sr-only">Pricing and subscription</h1>
                 <div className="main-primary pricing-primary">
                     <Hero mobile={pricingHeroMobile} tablet={pricingHeroTablet} desktop={pricingHeroDesktop} />

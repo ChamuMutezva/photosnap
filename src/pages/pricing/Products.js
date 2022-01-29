@@ -8,6 +8,7 @@ function Products() {
     console.log(pricing.features)
     return (
         <div className="features">
+            <h2 className="main-features-title">Compare</h2>
             <div className="title-container container">
                 <h2 className="features-title">The Features</h2>
                 <p className="flex feature-content">

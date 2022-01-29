@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { DataContext } from '../context/Context'
 import Hero from '../shared/Hero'
 import HeroContent from '../shared/HeroContent'
@@ -14,10 +14,15 @@ function Home() {
     const selectStories = stories && stories.assets.filter(elm => elm.shared === true)
     const selectFeatures = features && features.svgs.filter(elm => elm.shared === true)
     console.log(selectFeatures)
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <>
-            <main>
-                <div className="main-home-primary-container">
+            <main tabIndex="-1" >
+                <div className="main-home-primary-container" >
                     <h1 className="sr-only">An introduction to the photosnap application</h1>
                     <div className="main-primary main-primary-home">
 

@@ -60,9 +60,19 @@
 }
 
 .features {
-    max-width: 90%;
+    width: 90%;
+    max-width: 45.6875rem;
     margin: auto;
+}
 
+.main-features-title {
+    text-transform: uppercase;
+    text-align: center;
+    display: none;
+
+    @include utils.mQ(43.125rem) {
+        display: block;       
+    }
 }
 
 .features-title {

@@ -1,6 +1,11 @@
 @use "../base";
 @use "../utils";
 
+.cards {
+    max-width: base.$max-size;
+    margin: auto;
+}
+
 .card-list {
     display: flex;
     flex-direction: column;
@@ -35,6 +40,13 @@
            margin-inline-start: 0;
         }
     }
+
+    @include utils.mQ(67.5rem) {
+        display: flex;
+        .btn-invite {
+            margin-inline-start: auto;
+         }
+     }
 }
 
 .card-item-title {
@@ -44,6 +56,10 @@
     @include utils.mQ(43.125rem) {
         text-align: left;
     }
+
+    @include utils.mQ(67.5rem) {
+       text-align: center;
+     }
 }
 
 .card-content {
@@ -55,6 +71,10 @@
     @include utils.mQ(43.125rem) {
         text-align: left;
     }
+
+    @include utils.mQ(67.5rem) {
+        text-align: center;
+      }
 }
 
 .product-list {
@@ -72,6 +92,10 @@
     @include utils.mQ(43.125rem) {
        align-items: flex-end;
     }
+
+    @include utils.mQ(67.5rem) {
+        align-items: center;
+      }
 }
 
 .monthly-yearly-cost {

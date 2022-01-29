@@ -1,5 +1,5 @@
 import React from 'react'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { DataContext } from '../context/Context'
 import Hero from '../shared/Hero'
 import HeroContent from '../shared/HeroContent'
@@ -12,9 +12,14 @@ import storiesHeroDesktop from '../../assets/stories/desktop/moon-of-appalacia.j
 function Stories() {
     const { stories } = useContext(DataContext)
     const selectStories = stories && stories.assets.filter(elm => elm.id !== "story11")
+    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <>
-            <main>
+            <main tabIndex="-1">
                 <h1 className="sr-only">Read the full Photosnap stories here</h1>
                 <div className="main-primary main-stories">
                     <Hero mobile={storiesHeroMobile} tablet={storiesHeroTablet} desktop={storiesHeroDesktop} />

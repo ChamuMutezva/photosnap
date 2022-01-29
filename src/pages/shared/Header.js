@@ -13,7 +13,7 @@ function Header() {
     return (
         <header className="flex container">
             <div className="logo-container">
-                <Link to="/" className="nav-btn" >
+                <Link to="/" className="nav-btn" aria-current="page" >
                     <img src={LogoImg} alt="photosnap home page" />
                 </Link>
             </div>
