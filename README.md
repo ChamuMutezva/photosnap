@@ -129,7 +129,6 @@ export const DataProvider = (props) => {
     </div>
 ```
 
-
 ### creating the header and navigation
 
 - the header comprises of the photosnap logo on the right which can be used as the home navigation
@@ -144,41 +143,39 @@ be displayed
 
 - all the pages has a similar layout of the hero section. It has an image and content section but displayed differently in some layout of the tablet and desktop section. The mobile is generally a top to bottom approach.
 
-##### Hero section - home page , Feature Page and Pricing page
+#### Hero section - home page , Feature Page and Pricing page
 
 - the layout for the hero page on mobile has the image on top and the content is below
 - for tablet and desktop the image is on the left and the content is on the right. The content takes about 2 fifth (2/5) of the available space while the image space is about 3 fifth (3/5). Displayed using flex.
 
-##### Hero section - Home page 
+#### Hero section - Home page 
 
-- there is 3 hero sections for the home page . The design for the three are the same witha few exception. The hero sections are contained in the div class `home-primary` with the first class of the content having a dark background and the other 2 have a white background.  The first and third `home-primary` class has a flex-direction of row-reverse while the middle one has the default value of row.
+- there is 3 hero sections for the home page . The design for the three are the same with a few exception. The hero sections are contained in the div class `home-primary` with the first class of the content having a dark background and the other 2 have a white background.  The first and third `home-primary` class has a flex-direction of row-reverse while the middle one has the default value of row.
 
 ##### Hero section - Stories page 
 
 - the layout of the hero section for the tablet and desktop is different from the other pages. The content is sitting on top of the image which in this scenario acts as a background image. To achieve that the `main-stories` container is set to position relative and the `hero-content`is set to position absolute with a z-index to allow it to be on top of the image
 
-#### Main Section
+#### Main Sections
 
-
+- Here are the main components for the site 
+  - Hero - all pages 
+  - Story - Home and Story Page
+  - FeatureList - Home and Feature page
+  - Complimentary - Feature and Pricing page
+  - Footer - all pages
+  - Plans (pricing page)
+  - Products  (pricing page)
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- sass custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
@@ -194,10 +191,6 @@ const proudOfThisFunc = () => {
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
@@ -206,21 +199,19 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [React/gsap basics](https://ihatetomatoes.net/module-1/rg-101-05-create-an-array-of-refs-341/) - using scrolltrigger on a react app
+- [toggle-amount-switcher](// https://www.sarasoueidan.com/blog/toggle-switch-design/)
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Chamu Mutezva](https://github.com/ChamuMutezva)
+- Frontend Mentor - [@ChamuMutezva](https://www.frontendmentor.io/profile/ChamuMutezva)
+- Twitter - [@ChamuMutezva](https://twitter.com/ChamuMutezva)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
 
 ## Acknowledgments
 
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

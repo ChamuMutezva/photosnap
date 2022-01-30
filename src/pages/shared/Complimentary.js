@@ -20,7 +20,7 @@ function Complimentary() {
                         <div className="complimentary-title-container">
                             <h2 className="complimentary-title">We're in Beta. Get your invite today!</h2>
                         </div>
-                        <div className="link-container">
+                        <div className="link-container invite">
                             <LinkArrow linkText="Get an invite" />
                         </div>
                     </div>
