@@ -61,8 +61,7 @@
 }
 
 .story-details-container {
-    //	max-width: 19.375rem;
-    margin: auto;
+     margin: auto;
 }
 
 .hero-content {
@@ -81,8 +80,7 @@
     }
 
     @include utils.mQ(67.5rem) {
-        flex: 1 1 40%;
-        // margin-inline-start: base.$spacer-2-25 * 2;
+        flex: 1 1 40%;        
     }
 }
 

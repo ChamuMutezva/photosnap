@@ -200,7 +200,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [React/gsap basics](https://ihatetomatoes.net/module-1/rg-101-05-create-an-array-of-refs-341/) - using scrolltrigger on a react app
-- [toggle-amount-switcher](// https://www.sarasoueidan.com/blog/toggle-switch-design/)
+- [Toggle-amount-switcher](https://www.sarasoueidan.com/blog/toggle-switch-design/)
 
 
 ## Author

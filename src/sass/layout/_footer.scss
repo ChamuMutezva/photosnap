@@ -10,6 +10,7 @@
     display: grid;
     place-content: center;
     gap: base.$spacer-3;
+    padding-block: base.$spacer-3-75;
     margin: auto;
 
     .get-invite {
