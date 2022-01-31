@@ -19,7 +19,7 @@ function Footer() {
                 </div>
                 <div className="social-platforms">
                     <ul className="social-link-list">
-                        {shared && shared.svgs.map(elm => <SocialLinks key={elm.id} Link={elm.link}
+                        {shared && shared.svgs.map(elm => <SocialLinks key={elm.id} link={elm.link}
                             url={elm.url} content={elm.content} />)}
                     </ul>
                 </div>

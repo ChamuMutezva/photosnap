@@ -9,8 +9,10 @@
     position: absolute;
     width: 100%;
     z-index: 1;
-    bottom: base.$spacer-half;
+    bottom: 0;
     left: 0;
+    background-color: hsla(0,0%,4%,.4);
+    padding-block-end: .5rem;
 
     .get-invite {
         justify-content: space-between;
