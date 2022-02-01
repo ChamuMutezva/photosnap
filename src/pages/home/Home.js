@@ -1,20 +1,20 @@
-import { useContext, useEffect} from 'react'
+import { useContext, useEffect } from 'react'
 import { DataContext } from '../context/Context'
 import Hero from '../shared/Hero'
 import HeroContent from '../shared/HeroContent'
-import Secondary from '../shared/Secondary'
+//import Secondary from '../shared/Secondary'
 import Story from '../shared/Story'
 import FeatureList from '../shared/FeatureList'
 
 function Home() {
-   
-    const { homePage, stories, features } = useContext(DataContext)   
+
+    const { homePage, stories, features } = useContext(DataContext)
     const selectStories = stories && stories.assets.filter(elm => elm.shared === true)
-    const selectFeatures = features && features.svgs.filter(elm => elm.shared === true)    
+    const selectFeatures = features && features.svgs.filter(elm => elm.shared === true)
 
     useEffect(() => {
         window.scrollTo(0, 0)
-    }, [])   
+    }, [])
 
     return (
         <>
@@ -29,9 +29,10 @@ function Home() {
                         </div>)}
 
                     </div>
-                    <div className="main-seondary main-secondary-home">
+                    {/* <div className="main-seondary main-secondary-home">
                         <Secondary />
                     </div>
+                 */}
                 </div>
                 <div className="main-home-secondary-container">
                     {selectStories && selectStories.map(elm => <Story key={elm.name} mobile={elm.imageMobile}
@@ -42,7 +43,9 @@ function Home() {
             <aside>
                 <div className="container feature-container">
                     {selectFeatures && selectFeatures.map(elm => <FeatureList key={elm.id}
-                        title={elm.title} url={elm.url} content={elm.content} />)}
+                        width={elm.width} height={elm.height}
+                        title={elm.title} url={elm.url}
+                        content={elm.content} />)}
                 </div>
             </aside>
         </>

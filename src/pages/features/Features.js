@@ -14,7 +14,7 @@ function Features() {
     // const selectFeatures = features && features.svgs.filter(elm => elm.shared === true)
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+    }, [])
 
     return (
         <>
@@ -30,7 +30,9 @@ function Features() {
                 <div className="feature-section">
                     <div className="container feature-list">
                         {features && features.svgs.map(elm => <FeatureList key={elm.id}
-                            title={elm.title} url={elm.url} content={elm.content} />)}
+                            width={elm.width} height={elm.height}
+                            title={elm.title} url={elm.url}
+                            content={elm.content} />)}
                     </div>
                 </div>
             </main>

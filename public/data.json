@@ -49,6 +49,8 @@
                 "url": "../assets/features/desktop/responsive.svg",
                 "title": "100% Responsive",
                 "shared": true,
+                "width": 72,
+                "height": 72,
                 "content": "No matter which the device you're on, our site is fully responsive and stories look beautiful on any screen."
             },
             {
@@ -56,6 +58,8 @@
                 "url": "../assets/features/desktop/no-limit.svg",
                 "title": "No Photo Upload Limit",
                 "shared": true,
+                "width": 72,
+                "height": 36,
                 "content": " Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go."
             },
             {
@@ -63,6 +67,8 @@
                 "url": "../assets/features/desktop/embed.svg",
                 "title": "Available to Embed",
                 "shared": true,
+                "width": 71,
+                "height": 72,
                 "content": " Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. "
             },
             {
@@ -70,6 +76,8 @@
                 "url": "../assets/features/desktop/custom-domain.svg",
                 "title": "Custom Domain",
                 "shared": false,
+                "width": 81,
+                "height": 72,
                 "content": " With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding! "
             },
             {
@@ -77,6 +85,8 @@
                 "url": "../assets/features/desktop/boost-exposure.svg",
                 "title": "Boost Your Exposure",
                 "shared": false,
+                "width": 72,
+                "height": 72,
                 "content": " Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list."
             },
             {
@@ -84,6 +94,8 @@
                 "url": "../assets/features/desktop/drag-drop.svg",
                 "title": "Drag & Drop Image",
                 "shared": false,
+                "width": 91,
+                "height": 72,
                 "content": "  Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories."
             }
         ]
@@ -181,7 +193,9 @@
                 "title": "facebook",
                 "shared": true,
                 "link": "https://www.facebook.com/",
-                "content": "Visit us on our facebook page"
+                "content": "Visit us on our facebook page",
+                "width": 20,
+                "height": 20
             },
             {
                 "id": "social2",
@@ -189,15 +203,19 @@
                 "title": "youtube",
                 "shared": true,
                 "link": "https://www.youtube.com/",
-                "content": "Visit us on our youtube channel"
+                "content": "Visit us on our youtube channel",
+                "width": 21,
+                "height": 20
             },
             {
                 "id": "social3",
                 "url": "../assets/shared/desktop/twitter.svg",
                 "title": "twitter",
                 "shared": true,
-                "link": "https://twitter.com",
-                "content": "Visit us on our twitter page"
+                "link": "https://www.twitter.com",
+                "content": "Visit us on our twitter page",
+                "width": 21,
+                "height": 18
             },
             {
                 "id": "social4",
@@ -205,7 +223,9 @@
                 "title": "pinterest",
                 "shared": true,
                 "link": "https://za.pinterest.com/",
-                "content": "We are available on pinterest"
+                "content": "We are available on pinterest",
+                "width": 20,
+                "height": 20
             },
             {
                 "id": "social5",
@@ -213,7 +233,9 @@
                 "title": "instagram",
                 "shared": true,
                 "link": "https://www.instagram.com/",
-                "content": "Visit us on Instagram"
+                "content": "Visit us on Instagram",
+                "width": 21,
+                "height": 20
             }
         ]
     },

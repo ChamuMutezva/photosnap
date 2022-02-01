@@ -10,7 +10,7 @@ import FooterLogo from './FooterLogo'
 
 function Footer() {
     const { shared } = useContext(DataContext)
-   // console.log(shared.svgs)
+    // console.log(shared.svgs)
     return (
         <footer className="footer-wrapper">
             <div className="footer container">
@@ -20,13 +20,14 @@ function Footer() {
                 <div className="social-platforms">
                     <ul className="social-link-list">
                         {shared && shared.svgs.map(elm => <SocialLinks key={elm.id} link={elm.link}
-                            url={elm.url} content={elm.content} />)}
+                            url={elm.url} content={elm.content}
+                            width={elm.width} height={elm.height} />)}
                     </ul>
                 </div>
                 <FooterNavList />
-                
+
                 <div className="invite">
-                <LinkArrow linkText="Get an invite" />
+                    <LinkArrow linkText="Get an invite" />
                 </div>
                 <div className="copyright">
                     <p className="copyright-content">Copyright 2019. All rights reserved</p>
