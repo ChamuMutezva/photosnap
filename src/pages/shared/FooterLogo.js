@@ -3,8 +3,10 @@ import React from 'react'
 function FooterLogo() {
     return (
 
-        <svg xmlns="http://www.w3.org/2000/svg"
-            width="170" height="16">                
+        <svg role="img" xmlns="http://www.w3.org/2000/svg"
+        aria-labelledby="logo-text"
+            width="170" height="16">  
+            <title id="logo-text">Photosnap international private limited</title>              
             <defs>
                 <linearGradient id="a" x1="0%" x2="50%" y1="85.457%" y2="14.543%">
                     <stop offset="0%" stopColor="#FFC593" />

@@ -48,7 +48,7 @@ function Header() {
 
                 </div>
                 <div className={`modal-container ${!menu ? "hide-modal" : ""}`}>
-                    <ul className="nav-list" role="navigation" id="main-menu">
+                    <ul className="nav-list" role="menu" id="main-menu">
                         <li className="nav-list-item" role="menuitem">
                             <Link className="nav-list-item-btn" to="/stories" onClick={handleNavMenu}>Stories</Link>
                         </li>
