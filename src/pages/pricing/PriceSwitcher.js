@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Plans from './Plans'
+
 // https://www.sarasoueidan.com/blog/toggle-switch-design/
 function PriceSwitcher() {
     const [selectVal, setSelect] = useState("yearly")

@@ -10,7 +10,7 @@ import FooterLogo from './FooterLogo'
 
 function Footer() {
     const { shared } = useContext(DataContext)
-    // console.log(shared.svgs)
+   
     return (
         <footer className="footer-wrapper">
             <div className="footer container">
