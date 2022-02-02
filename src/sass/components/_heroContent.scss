@@ -80,7 +80,8 @@
     }
 
     @include utils.mQ(67.5rem) {
-        flex: 1 1 40%;        
+        flex: 1 1 40%;  
+        padding-inline: base.$spacer-2-5 * 2;      
     }
 }
 
@@ -97,6 +98,7 @@
         font-size: base.$fs-40;
         font-weight: base.$fw-bold;
         letter-spacing: 4.17px;
+        gap: base.$spacer-1;
     }
 }
 

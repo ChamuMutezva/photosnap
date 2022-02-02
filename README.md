@@ -96,7 +96,7 @@ export const DataProvider = (props) => {
 
         setFetchStatus("success")
     }, [])
-    // console.log(data)
+   
     if (fetchStatus === 'idle' || fetchStatus === 'loading') {
         return <div className='loading'>
             <h2 className='loading-title'>Loading...</h2>
