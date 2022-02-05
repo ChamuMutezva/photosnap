@@ -9,11 +9,11 @@ import Complimentary from '../shared/Complimentary'
 import PriceSwitcher from './PriceSwitcher'
 
 function Pricing() {
-
+/*
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
-
+*/
     return (
         <>
             <main tabIndex="-1">

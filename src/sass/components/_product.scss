@@ -71,7 +71,8 @@
     display: none;
 
     @include utils.mQ(43.125rem) {
-        display: block;       
+        display: block;   
+        padding-block: base.$spacer-3;    
     }
 }
 

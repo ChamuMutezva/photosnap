@@ -18,7 +18,7 @@ function PriceSwitcher() {
                     <legend>Terms and price selector</legend>
                     <input type="radio" name="price" id="monthly" onClick={handleSelect} />
                     <label htmlFor="monthly">Monthly</label>
-                    <input type="radio" name="price" id="yearly" onClick={handleSelect} />
+                    <input type="radio" name="price" id="yearly" onClick={handleSelect}  />
                     <label htmlFor="yearly">Yearly</label>
                 </fieldset>
             </div>

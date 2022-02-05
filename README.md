@@ -180,6 +180,7 @@ be displayed
 ### Continued development
 
 - active states on the story cards as per design
+- the ScrollToTop is not working currently with **React Router v6 **, still needs to find a fix for it.
 
 ### Useful resources
 

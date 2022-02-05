@@ -61,7 +61,7 @@
 }
 
 .story-details-container {
-     margin: auto;
+    margin: auto;
 }
 
 .hero-content {
@@ -80,8 +80,8 @@
     }
 
     @include utils.mQ(67.5rem) {
-        flex: 1 1 40%;  
-        padding-inline: base.$spacer-2-5 * 2;      
+        flex: 1 1 40%;
+        padding-inline: base.$spacer-2-5 * 2;
     }
 }
 
@@ -149,4 +149,31 @@
 
 .hero-content-author {
     margin-block-end: base.$spacer-2-5;
+}
+
+/*******************************************/
+/*         FEATURES PAGE                   */
+/*******************************************/
+
+.features-primary .hero-content,
+.pricing-primary .hero-content {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 34%;
+        background-image: linear-gradient(base.$clr-blue, base.$clr-pink, base.$clr-lt-cream);
+        top: 0;
+        left: 33px;
+
+        @include utils.mQ(43.125rem) {
+            height: 9rem;
+            width: 6px;
+            top: 35%;
+            left: 0;
+
+        }
+    }
 }

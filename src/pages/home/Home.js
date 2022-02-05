@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react'
+import { useContext } from 'react'
 import { DataContext } from '../context/Context'
 import Hero from '../shared/Hero'
 import HeroContent from '../shared/HeroContent'
@@ -11,10 +11,6 @@ function Home() {
     const { homePage, stories, features } = useContext(DataContext)
     const selectStories = stories && stories.assets.filter(elm => elm.shared === true)
     const selectFeatures = features && features.svgs.filter(elm => elm.shared === true)
-
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
 
     return (
         <>

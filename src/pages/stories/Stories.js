@@ -12,11 +12,7 @@ import storiesHeroDesktop from '../../assets/stories/desktop/moon-of-appalacia.j
 function Stories() {
     const { stories } = useContext(DataContext)
     const selectStories = stories && stories.assets.filter(elm => elm.id !== "story11")
-    
-    useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
-
+  
     return (
         <>
             <main tabIndex="-1">
