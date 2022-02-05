@@ -1,5 +1,5 @@
 import React from 'react'
-import { useContext } from 'react'
+import { useContext, useRef, useEffect } from 'react'
 import { DataContext } from '../context/Context'
 import Hero from '../shared/Hero'
 import featureHeroMobile from '../../assets/features/mobile/hero.jpg'
@@ -12,9 +12,15 @@ import Complimentary from '../shared/Complimentary'
 function Features() {
     const { features } = useContext(DataContext)
 
+    const featuresMain = useRef()
+
+    useEffect(() => {
+        featuresMain.current.focus()
+    })
+
     return (
         <>
-            <main tabIndex="-1">
+            <main tabIndex="-1" ref={featuresMain}>
                 <h1 className="sr-only">Photosnap application features</h1>
                 <div className="main-primary features-primary">
                     <Hero mobile={featureHeroMobile} tablet={featureHeroTablet} desktop={featureHeroDesktop} />

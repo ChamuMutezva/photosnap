@@ -1,5 +1,5 @@
 import  React from 'react'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import Hero from '../shared/Hero'
 import HeroContent from '../shared/HeroContent'
 import pricingHeroMobile from '../../assets/pricing/mobile/hero.jpg'
@@ -9,14 +9,14 @@ import Complimentary from '../shared/Complimentary'
 import PriceSwitcher from './PriceSwitcher'
 
 function Pricing() {
-/*
+    const pricingMain = useRef()
+
     useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
-*/
+        pricingMain.current.focus()
+    })
     return (
         <>
-            <main tabIndex="-1">
+            <main tabIndex="-1" ref={pricingMain}>
                 <h1 className="sr-only">Pricing and subscription</h1>
                 <div className="main-primary pricing-primary">
                     <Hero mobile={pricingHeroMobile} tablet={pricingHeroTablet} desktop={pricingHeroDesktop} />

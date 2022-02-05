@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useRef , useEffect} from 'react'
 import { DataContext } from '../context/Context'
 import Hero from '../shared/Hero'
 import HeroContent from '../shared/HeroContent'
@@ -8,13 +8,19 @@ import FeatureList from '../shared/FeatureList'
 
 function Home() {
 
+    const homeMain = useRef()
+
+    useEffect(() => {
+        homeMain.current.focus()
+    })
+
     const { homePage, stories, features } = useContext(DataContext)
     const selectStories = stories && stories.assets.filter(elm => elm.shared === true)
     const selectFeatures = features && features.svgs.filter(elm => elm.shared === true)
 
     return (
         <>
-            <main tabIndex="-1" >
+            <main tabIndex="-1" ref={homeMain} >
                 <div className="main-home-primary-container" >
                     <h1 className="sr-only">An introduction to the photosnap application</h1>
                     <div className="main-primary main-primary-home">
