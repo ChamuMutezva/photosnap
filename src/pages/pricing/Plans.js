@@ -3,7 +3,7 @@ import InvitePlanBtn from '../shared/InvitePlanBtn'
 import Products from './Products'
 
 function Plans(props) {
-    console.log(props)
+   
     return (
         <>
             <div className="cards container">

@@ -1,6 +1,13 @@
 @use "../base";
 @use "../utils";
 
+.feature-section {
+	padding-block: base.$spacer-1;
+    @include utils.mQ(53.75rem) {
+        padding-block: base.$spacer-3;
+    }
+}
+
 .feature-container {
     padding-block: base.$spacer-2-5 * 2;
     display: flex;

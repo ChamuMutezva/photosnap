@@ -5,8 +5,7 @@ import LinkArrow from './LinkArrow'
 
 function Complimentary() {
     const { shared } = useContext(DataContext)
-    // const selectShared = shared && shared.assets.filter(elm => elm.shared === true)
-    console.log(shared)
+    
     return (
         <div className="complimentary">
             <div className="complimentary-container">
