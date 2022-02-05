@@ -29,7 +29,7 @@ function Header() {
                     <img src={LogoImg} alt="photosnap home page" width={170} height={16} />
                 </Link>
             </div>
-            <nav className="nav" aria-label="main menu navigation" role="navigation">
+            <nav className="nav" aria-label="main menu navigation">
                 <div className="menu-control">
                     <button className={`menu-btns`}
                         onClick={handleNavMenu}
