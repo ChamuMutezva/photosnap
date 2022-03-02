@@ -176,6 +176,15 @@ be displayed
 
 ### What I learned
 
+Page not found - when refreshing pages
+When using netlify for hosting, create a netlify.toml file in the root folder with the following lines of code to redirect to home page.
+
+``` 
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+```
 
 ### Continued development
 

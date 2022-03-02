@@ -1,8 +1,7 @@
-import { useContext, useRef , useEffect} from 'react'
+import { useContext, useRef, useEffect } from 'react'
 import { DataContext } from '../context/Context'
 import Hero from '../shared/Hero'
 import HeroContent from '../shared/HeroContent'
-//import Secondary from '../shared/Secondary'
 import Story from '../shared/Story'
 import FeatureList from '../shared/FeatureList'
 
@@ -31,10 +30,6 @@ function Home() {
                         </div>)}
 
                     </div>
-                    {/* <div className="main-seondary main-secondary-home">
-                        <Secondary />
-                    </div>
-                 */}
                 </div>
                 <div className="main-home-secondary-container">
                     {selectStories && selectStories.map(elm => <Story key={elm.name} mobile={elm.imageMobile}

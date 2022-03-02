@@ -10,7 +10,10 @@
                 "content": "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
                 "imageMobile": "../assets/home/mobile/create-and-share.jpg",
                 "imageTablet": "../assets/home/tablet/create-and-share.jpg",
-                "imageDesktop": "../assets/home/desktop/create-and-share.jpg"
+                "imageDesktop": "../assets/home/desktop/create-and-share.jpg",
+                "mobileSize": [375, 294],
+                "tabletSize": [273, 650],
+                "desktopSize":[830, 650]
             },
             {
                 "name": "beautiful-stories",
@@ -19,7 +22,10 @@
                 "content": "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.",
                 "imageMobile": "../assets/home/mobile/beautiful-stories.jpg",
                 "imageTablet": "../assets/home/tablet/beautiful-stories.jpg",
-                "imageDesktop": "../assets/home/desktop/beautiful-stories.jpg"
+                "imageDesktop": "../assets/home/desktop/beautiful-stories.jpg",
+                "mobileSize": [375, 271],
+                "tabletSize": [273, 600],
+                "desktopSize":[830, 600]
             },
             {
                 "name": "design",
@@ -28,7 +34,10 @@
                 "content": "Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it.",
                 "imageMobile": "../assets/home/mobile/designed-for-everyone.jpg",
                 "imageTablet": "../assets/home/tablet/designed-for-everyone.jpg",
-                "imageDesktop": "../assets/home/desktop/designed-for-everyone.jpg"
+                "imageDesktop": "../assets/home/desktop/designed-for-everyone.jpg",
+                "mobileSize": [375, 271],
+                "tabletSize": [273, 600],
+                "desktopSize":[830, 600]
             }
         ]
     },
@@ -40,7 +49,10 @@
                 "name": "hero",
                 "imageMobile": "../assets/home/mobile/hero.jpg",
                 "imageTablet": "../assets/home/tablet/hero.jpg",
-                "imageDesktop": "../assets/home/desktop/hero.jpg"
+                "imageDesktop": "../assets/home/desktop/hero.jpg",
+                "mobileSize": [375, 294],
+                "tabletSize": [273, 490],
+                "desktopSize":[830, 490]
             }
         ],
         "svgs": [
@@ -108,7 +120,10 @@
                 "name": "hero",
                 "imageMobile": "../assets/home/mobile/hero.jpg",
                 "imageTablet": "../assets/home/tablet/hero.jpg",
-                "imageDesktop": "../assets/home/desktop/hero.jpg"
+                "imageDesktop": "../assets/home/desktop/hero.jpg",
+                "mobileSize": [375, 294],
+                "tabletSize": [273, 490],
+                "desktopSize":[830, 490]
             }
         ],
         "features": [
@@ -183,7 +198,10 @@
                 "name": "hero",
                 "imageMobile": "../assets/shared/mobile/bg-beta.jpg",
                 "imageTablet": "../assets/shared/tablet/bg-beta.jpg",
-                "imageDesktop": "../assets/shared/desktop/bg-beta.jpg"
+                "imageDesktop": "../assets/shared/desktop/bg-beta.jpg",
+                "mobileSize": [375, 288],
+                "tabletSize": [768, 280],
+                "desktopSize":[1440, 280]
             }
         ],
         "svgs": [
@@ -252,7 +270,9 @@
                 "imageTablet": "../assets/stories/desktop/mountains.jpg",
                 "author": "John Appleseed",
                 "shared": true,
-                "dated": "April 16th 2020"
+                "dated": "April 16th 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]               
             },
             {
                 "id": "story2",
@@ -263,7 +283,9 @@
                 "imageTablet": "../assets/stories/desktop/cityscapes.jpg",
                 "author": "Benjamin Cruz",
                 "shared": true,
-                "dated": "April 14th 2020"
+                "dated": "April 14th 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]                
             },
             {
                 "id": "story3",
@@ -274,7 +296,9 @@
                 "imageTablet": "../assets/stories/desktop/18-days-voyage.jpg",
                 "author": "Alexei Borodin",
                 "shared": true,
-                "dated": "April 11th 2020"
+                "dated": "April 11th 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             },
             {
                 "id": "story4",
@@ -285,7 +309,9 @@
                 "imageTablet": "../assets/stories/desktop/architecturals.jpg",
                 "author": "Samantha Brooke",
                 "shared": true,
-                "dated": "April 9th 2020"
+                "dated": "April 9th 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             },
             {
                 "id": "story5",
@@ -296,7 +322,9 @@
                 "imageTablet": "../assets/stories/desktop/behind-the-waves.jpg",
                 "author": "Lamarr Wilson",
                 "shared": false,
-                "dated": "March 11th 2020"
+                "dated": "March 11th 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             },
             {
                 "id": "story6",
@@ -307,7 +335,9 @@
                 "imageTablet": "../assets/stories/desktop/calm-waters.jpg",
                 "author": "Samantha Brooke",
                 "shared": false,
-                "dated": "March 9th 2020"
+                "dated": "March 9th 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             },
             {
                 "id": "story7",
@@ -318,7 +348,9 @@
                 "imageTablet": "../assets/stories/desktop/dark-forest.jpg",
                 "author": "Mohammed Abdul",
                 "shared": false,
-                "dated": "March 4th 2020"
+                "dated": "March 4th 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             },
             {
                 "id": "story8",
@@ -329,7 +361,9 @@
                 "imageTablet": "../assets/stories/desktop/king-on-africa.jpg",
                 "author": "Tim Hillenburg",
                 "shared": false,
-                "dated": "March 29th 2020"
+                "dated": "March 29th 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             },
             {
                 "id": "story9",
@@ -340,7 +374,9 @@
                 "imageTablet": "../assets/stories/desktop/land-of-dreams.jpg",
                 "author": "William Malcolm",
                 "shared": false,
-                "dated": "February 25th 2020"
+                "dated": "February 25th 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             },
             {
                 "id": "story10",
@@ -351,7 +387,9 @@
                 "imageTablet": "../assets/stories/desktop/milky-way.jpg",
                 "author": "Benjamin Cruz",
                 "shared": false,
-                "dated": "March 5th 2020"
+                "dated": "March 5th 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             },
             {
                 "id": "story11",
@@ -362,7 +400,9 @@
                 "imageTablet": "../assets/stories/desktop/moon-of-appalacia.jpg",
                 "author": "John Appleseed",
                 "shared": false,
-                "dated": "March 2nd 2020"
+                "dated": "March 2nd 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             },
             {
                 "id": "story12",
@@ -373,7 +413,9 @@
                 "imageTablet": "../assets/stories/desktop/rage-of-the-sea.jpg",
                 "author": "Mohammed Abdul",
                 "shared": false,
-                "dated": "March 19th 2020"
+                "dated": "March 19th 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             },
             {
                 "id": "story13",
@@ -384,7 +426,9 @@
                 "imageTablet": "../assets/stories/desktop/running-free.jpg",
                 "author": "Michelle",
                 "shared": false,
-                "dated": " March 16th 2020"
+                "dated": " March 16th 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             },
             {
                 "id": "story14",
@@ -395,7 +439,9 @@
                 "imageTablet": "../assets/stories/desktop/somwarpet.jpg",
                 "author": "Michelle",
                 "shared": false,
-                "dated": "March 1st 2020"
+                "dated": "March 1st 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             },
             {
                 "id": "story15",
@@ -406,7 +452,9 @@
                 "imageTablet": "../assets/stories/desktop/trip-to-nowhere.jpg",
                 "author": "Felicia Rourke",
                 "shared": false,
-                "dated": " March 21st 2020"
+                "dated": " March 21st 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             },
             {
                 "id": "story16",
@@ -417,7 +465,9 @@
                 "imageTablet": "../assets/stories/desktop/unforeseen-corners.jpg",
                 "author": "William Malcolm",
                 "shared": false,
-                "dated": " April 3rd 2020"
+                "dated": " April 3rd 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             },
             {
                 "id": "story17",
@@ -428,7 +478,9 @@
                 "imageTablet": "../assets/stories/desktop/world-tour.jpg",
                 "author": "Timothy Wagner",
                 "shared": false,
-                "dated": " April 7th 2020"
+                "dated": " April 7th 2020",
+                "mobileSize": [375, 375],
+                "tabletSize": [360, 600]  
             }
         ]
     }
